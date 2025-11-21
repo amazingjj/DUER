@@ -1,0 +1,4 @@
+'What is the number of units in the perimeter of a non-square rectangle with integer dimensions, where the area in square units is numerically equal to the perimeter in units?'
+'The core question is: How many days would it take 25 men, working at the same rate, to dig the foundation for a new apartment?'
+'The core question is: How many 30-cent items did Janice purchase if she bought a total of 30 items, each priced at 30 cents, 2 dollars, or 3 dollars, and her total purchase price was $30.00?'
+'The core question is: What is the value of \\( b \\) in the quadratic \\( x^2 + bx + 44 \\) if it can be rewritten in the form \\( (x + m)^2 + 8 \\) using the method of completing the square?'

@@ -1,0 +1,4 @@
+177
+\frac{50}{3}
+10
+\begin{pmatrix}6\\3\end{pmatrix}

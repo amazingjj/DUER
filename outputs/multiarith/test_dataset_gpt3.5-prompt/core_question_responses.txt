@@ -1,0 +1,8 @@
+'How many shelves will Oliver need to store the remaining books if each shelf can hold 4 books?'
+'How many pictures were in each of the albums if Robin uploaded a total of 36 pictures to Facebook and sorted them into 9 different albums with an equal number of pictures in each album?'
+'How many points did Emily have at the end of the game after scoring 16 points in the first round, 33 points in the second round, and losing 48 points in the last round?'
+'How much money did Kaleb end up with after earning from mowing lawns in spring and summer and spending on supplies?'
+'How many shelves did the store use to display the remaining coloring books if each shelf holds 5 books?'
+'How many small gardens did Bianca have if she started with 52 seeds, planted 40 in the big garden, and put 2 seeds in each small garden?'
+'How many trips will Jerry make to pick up a total of 16 trays if he can only carry 8 trays at a time?'
+'How many books did Rachel have in total if she organized 6 shelves of mystery books and 2 shelves of picture books, with each shelf containing exactly 9 books?'

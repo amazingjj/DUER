@@ -1,0 +1,300 @@
+3
+7
+The final answer is: 16
+The final answer is: \boxed{1, -2}
+1
+25
+The final answer is: -7
+The final answer is: \boxed{15, -11}
+156
+The final answer is: \[\boxed{\frac{3}{2}}\] The y-intercept of line \(a\) is \(\frac{3}{2}\).
+600
+The final answer is:\[ \boxed{\frac{1}{3}} \]
+6
+The final answer is: \boxed{(-7, -2)}
+1
+The final answer is: \boxed{18}
+6
+The final answer is: 50
+The final answer is:\[\boxed{2}\]
+1120
+2
+16
+(3, -3)
+5
+21
+49
+3
+The final answer is: \boxed{0}
+The final answer is: \boxed{12}
+43
+The final answer is: \boxed{-4}
+41
+31
+10
+23
+The final answer is: \[\boxed{0.25}\]
+The final answer is: $\boxed{\frac{1}{12}}$Extracted answer: $\frac{1}{12}$
+0
+40
+The final answer is: \boxed{5.}
+4
+37
+The final answer is: \boxed{-\frac{1}{2}}
+The final answer is: \boxed{(-\infty, 2) \cup (3, \infty)}
+20
+350
+0
+-39
+1
+16386.16
+The final answer is: $\boxed{-\frac{3}{2}}$
+1
+38
+5
+7
+The final answer is: -11, 9
+-2
+6
+26
+17
+0
+14
+The final answer is: \boxed{36\sqrt{35}}
+2
+The final answer is: \boxed{0}
+0
+The final answer is: \boxed{5.5}
+6
+20
+288
+The final answer is 2
+30
+The final answer is: \boxed{10\sqrt{2}} Extracted answer: 10
+The final answer is: \boxed{4}
+-3
+9
+400
+The final answer is: \boxed{\frac{1}{5} + \frac{3}{5}i}Extracted numeric value: N/A (complex number)
+7.5
+33
+0
+72
+(1, 4)
+25
+7
+1
+1
+112
+1
+0
+225
+108
+The final answer is: 12
+187.5
+The final answer is: \boxed{1/2}
+40
+9
+The final answer is: \frac{625}{4} Extracted answer: \boxed{156.25}
+7.5
+44
+10
+5.4
+1
+5
+0
+-128
+32736
+2
+5000
+89
+-4
+The final answer is:\[ \boxed{3.5} \]
+The final answer is:\[\boxed{\frac{2}{3}}\]
+1056
+0
+49
+7
+15
+2
+The final answer is: \boxed{0}
+268
+2003
+5
+12
+45
+100
+The final answer is: \boxed{-9}
+9
+13
+The final answer is: \boxed{21a^5 - 7a^4 - 16a^2 + 32a}
+The answer is -2
+2
+630
+-4
+79
+6
+The final answer is: \boxed{0}
+The final answer is: $\boxed{2\sqrt{2}}$Extracted answer: 2
+The final answer is: \boxed{-5}
+9
+3.2
+10
+The final answer is: \boxed{-1}
+6
+1
+1
+-1
+3
+5
+The final answer is: \boxed{0.5}
+4
+The final answer is: \boxed{-14}
+32348
+1, -4, -5
+The final answer is: \boxed{10}{9}
+40
+The final answer is: \[\boxed{13}\]
+The final answer is: \boxed{-\dfrac{4}{25}} Extracted answer: -\dfrac{4}{25}
+47
+The final answer is: \boxed{-4}
+700
+194
+4
+The final answer is: \boxed{-\frac{3}{4}}
+78
+243
+8
+The final answer is: \boxed{2}
+The final answer is: 22
+368
+The final answer is: \boxed{-11}
+The answer is 2
+1
+24
+The final answer is: 1/2, 4/3
+The final answer is: \boxed{4.67}
+The final answer is: \[\boxed{11}\]
+4
+The final answer is: \boxed{0.8}
+40
+2
+6
+10
+8
+The final answer is 2
+2015
+350
+The final answer is:\[ \boxed{\frac{8}{7}} \]
+The final answer is: \boxed{-1}
+The final answer is: \(-\frac{2}{3}\)
+0
+24
+The final answer is -6
+-2, 1
+10
+27
+26
+3
+25
+4
+The final answer is: \boxed{5/3}
+-3
+6
+60000
+35
+The final answer is: \boxed{36}
+The final answer is: \boxed{10}
+7
+1
+13
+The final answer is: \boxed{33}
+The final answer is: \boxed{75}
+The final answer is: \boxed{4}
+33840
+The answer is 14
+6
+672
+174
+2
+The final answer is: \[\boxed{16}\]
+The final answer is: 7
+228.4
+The answer is -1
+The final answer is: \boxed{36}
+4
+The final answer is: \boxed{1}{9}
+The final answer is: 2
+125
+52
+The final answer is: \boxed{2.67}
+52
+13
+The value of $C$ is $\boxed{14}$. The answer is 14
+18.5
+6
+10
+5
+0
+5
+136
+The final answer is: \boxed{0}
+The final answer is 10
+The final answer is: \boxed{-\frac{1}{4}}
+4
+8
+4
+3702
+The final answer is: \boxed{1.9583}
+1
+8
+11
+1.8
+361
+15
+34
+8
+1
+10
+4
+The final answer is: \boxed{4.25}
+(1,1)
+The final answer is: \boxed{-9}
+65
+0
+3
+0
+6
+0
+10
+1
+28
+0.75
+28
+44
+The final answer is: \boxed{3qr + 6q - 15r - 30}
+43.5
+12
+-4
+13
+The final answer is: -\frac{1}{2}
+2
+2
+19
+The final answer is: \boxed{6}
+3
+The final answer is:2b
+15
+28
+7
+The final answer is: \boxed{4/3}
+The final answer is: 697
+54
+ACEFGIJKLNRSTUVYZ
+The final answer is: \boxed{[-2, 7]}
+The final answer is: \[\boxed{14}\]
+The final answer is: \boxed{15}
+108
+60
+The final answer is: \boxed{\frac{h^2}{m}}
+221

@@ -1,0 +1,148 @@
+(1)question:there were 35 students in a hostel . due to the admission of 7 new students the expenses of the mess were increased by rs . 84 per day while the average expenditure per head diminished by re 1 . what was the original expenditure of the mess ? Answer Choices: (A) rs 450 (B) rs 920 (C) rs 550 (D) rs . 630 (E) none of these
+    Hint:1. Initial number of students = 35\n2. Number of new students admitted = 7\n3. Total increase in mess expenses = Rs. 84 per day\n4. Average expenditure per head diminished by Rs. 1 after new admissions\n5. Need to find the original expenditure of the mess before new admissions\nAnswer Choices: (A) rs 450 (B) rs 920 (C) rs 550 (D) rs . 630 (E) none of these.
+    core_question:What was the original expenditure of the mess before the admission of 7 new students?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. Let the original average expenditure per student be rs . x.
+2. The total original expenditure for 35 students is 35x.
+3. After the admission of 7 new students, the total number of students becomes 42.
+4. The new average expenditure per student is (x - 1) because the average expenditure per head diminished by re 1.
+5. The total new expenditure for 42 students is 42(x - 1).
+6. According to the problem, the increase in total expenditure is rs . 84 per day.
+7. Therefore, the equation is 42(x - 1) = 35x + 84.
+8. Expanding the equation: 42x - 42 = 35x + 84.
+9. Rearranging the terms: 42x - 35x = 84 + 42.
+10. Simplifying: 7x = 126.
+11. Solving for x: x = 18.
+12. Therefore, the original total expenditure is 35 * 18 = rs . 630.
+The answer is D
+    (2)question:a train 200 m long passes a man , running at 5 km / hr in the same direction in which the train is going , in 10 seconds . the speed of the train is ? Answer Choices: (A) 28 (B) 50 (C) 77 (D) 22 (E) 12.
+    Hint:1. Length of the train: 200 meters\n2. Speed of the man: 5 km/hr (which needs to be converted to m/s)\n3. Time taken to pass the man: 10 seconds\n4. Direction of man and train: Same (important for relative speed calculation)\nAnswer Choices: (A) 28 (B) 50 (C) 77 (D) 22 (E) 12.
+    core_question:What is the speed of the train if it passes a 200-meter long train, which overtakes a man running in the same direction at 5 km/hr, in 10 seconds?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. The length of the train is 200 meters.
+2. The time taken to pass the man is 10 seconds.
+3. The speed of the train relative to the man can be calculated using the formula: speed = distance / time.
+4. Therefore, the relative speed of the train to the man is 200 meters / 10 seconds = 20 meters per second.
+5. To convert this speed into kilometers per hour, we use the conversion factor: 1 meter per second = 18/5 kilometers per hour.
+6. Thus, the relative speed in kilometers per hour is 20 * (18/5) = 72 kilometers per hour.
+7. Let the speed of the train be x kilometers per hour.
+8. The man is running at 5 kilometers per hour in the same direction as the train.
+9. Therefore, the relative speed of the train to the man is (x - 5) kilometers per hour.
+10. We know from step 6 that the relative speed is 72 kilometers per hour.
+11. Therefore, we can set up the equation: x - 5 = 72.
+12. Solving for x, we get x = 72 + 5 = 77 kilometers per hour.
+The answer is C
+    (3)question:solution x contains 20 % of material a and 80 % of material b . solution y contains 30 % of material a and 70 % of material b . a mixture of both these solutions contains 22 % of material a in the final product . how much solution x is present in the mixture ? Answer Choices: (A) 40 % (B) 60 % (C) 80 % (D) 100 % (E) 110 %
+    Hint:1. **Composition of Solution X**: Contains 20% material A and 80% material B.\n2. **Composition of Solution Y**: Contains 30% material A and 70% material B.\n3. **Composition of Final Mixture**: Contains 22% material A.\n4. **Objective**: Determine the percentage of Solution X in the final mixture.\nAnswer Choices: (A) 40 % (B) 60 % (C) 80 % (D) 100 % (E) 110 %
+    core_question:How much of solution X, which contains 20% material A and 80% material B, is present in a mixture that also includes solution Y, containing 30% material A and 70% material B, if the final mixture contains 22% material A
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. Assume the total weight of the mixture is 100 units.
+2. Let the weight of solution x in the mixture be x units.
+3. Therefore, the weight of solution y in the mixture is (100 - x) units.
+4. Solution x contains 20% of material a, so the amount of material a in solution x is 0.2x units.
+5. Solution y contains 30% of material a, so the amount of material a in solution y is 0.3(100 - x) units.
+6. The total amount of material a in the mixture is the sum of the amounts from solution x and solution y.
+7. According to the problem, the mixture contains 22% of material a.
+8. Therefore, the equation is 0.2x + 0.3(100 - x) = 22.
+9. Expanding the equation: 0.2x + 30 - 0.3x = 22.
+10. Combining like terms: -0.1x + 30 = 22.
+11. Rearranging the terms: -0.1x = 22 - 30.
+12. Simplifying: -0.1x = -8.
+13. Solving for x: x = 80.
+14. Therefore, the presence of solution x in the mixture is 80%.
+The answer is C
+    (4)question:a trader sells 40 metres of cloth for rs . 8200 at a profit of rs . 35 per metre of cloth . how much profit will the trder earn on 40 metres of cloth ? Answer Choices: (A) rs . 950 (B) rs . 1500 (C) rs . 1000 (D) rs . 1400 (E) none of these
+    Hint:1. Profit per metre of cloth: Rs. 35\n2. Total length of cloth sold: 40 metres\n\nTo find the total profit:\n- Multiply the profit per metre by the total length of cloth sold.\nAnswer Choices: (A) rs . 950 (B) rs . 1500 (C) rs . 1000 (D) rs . 1400 (E) none of these
+    core_question:How much total profit will the trader earn on selling 40 meters of cloth, if the profit per meter is Rs. 35?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. The trader sells 40 metres of cloth for rs . 8200.
+2. Therefore, the selling price of 1 metre of cloth is 8200 / 40 = rs . 205.
+3. The profit per metre of cloth is rs . 35.
+4. Therefore, the cost price of 1 metre of cloth is 205 - 35 = rs . 170.
+5. The cost price of 40 metres of cloth is 170 * 40 = rs . 6800.
+6. The selling price of 40 metres of cloth is rs . 8200.
+7. Therefore, the total profit earned on 40 metres of cloth is 8200 - 6800 = rs . 1400.
+The answer is D
+    (5)question:if x < y < z and y - x > 5 , where x is an even integer and y and z are odd integers , what is the least possible value s of z - x ? Answer Choices: (A) 6 (B) 7 (C) 8 (D) 9 (E) 10
+    Hint:1. \\( x \\) is an even integer.\n2. \\( y \\) and \\( z \\) are odd integers.\n3. \\( x < y < z \\).\n4. \\( y - x > 5 \\).\n5. We need to find the least possible value of \\( z - x \\).\nAnswer Choices: (A) 6 (B) 7 (C) 8 (D) 9 (E) 10
+    core_question:What is the least possible value of \\( z - x \\) given that \\( x < y < z \\), \\( y - x > 5 \\), \\( x \\) is an even integer, and \\( y \\) and \\( z \\) are odd integers?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. We know x < y < z.
+2. To find the least possible value for z - x, we need to find the values for z and x that can be closest to each other.
+3. If x is an even number, the smallest possible odd number greater than x is x + 1.
+4. However, y - x > 5, so y must be at least x + 6.
+5. Since y is an odd number, the smallest odd number greater than x + 6 is x + 7.
+6. Therefore, the minimum value for y is x + 7.
+7. The next odd number greater than y is y + 2.
+8. Therefore, the minimum value for z is x + 7 + 2 = x + 9.
+9. The difference between z and x is z - x = (x + 9) - x = 9.
+The answer is D
+    (6)question:what is the difference between the c . i . on rs . 6000 for 1 1 / 2 years at 4 % per annum compounded yearly and half - yearly ? Answer Choices: (A) s . 2.04 (B) s . 2.08 (C) s . 2.02 (D) s . 2.83 (E) s . 2.45
+    Hint:1. **Principal Amount (P):** Rs. 6000\n2. **Time Period (T):** 1.5 years\n3. **Annual Interest Rate (R):** 4%\n4. **Compounding Frequency:**\n   - Yearly\n   - Half-yearly\n5. **Formula for Compound Interest:** \\( A = P \\left(1 + \\frac{r}{n}\\right)^{nt} \\)\n   - Where:\n     - \\( A \\) is the amount after time \\( t \\)\n     - \\( P \\) is the principal amount\n     - \\( r \\) is the annual interest rate (decimal)\n     - \\( n \\) is the number of times interest applied per time period\n     - \\( t \\) is the number of time periods\n6. **Objective:** Calculate the difference in compound interest between yearly and half-yearly compounding for the given parameters.\nAnswer Choices: (A) s . 2.04 (B) s . 2.08 (C) s . 2.02 (D) s . 2.83 (E) s . 2.45
+    core_question:What is the difference between the compound interest on Rs. 6000 for 1.5 years at 4% per annum compounded yearly and half-yearly?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. Calculate the compound interest (C.I.) when interest is compounded yearly.
+2. The formula for compound interest is A = P(1 + r/n)^(nt), where A is the amount, P is the principal, r is the annual interest rate, n is the number of times interest is compounded per year, and t is the time in years.
+3. For yearly compounding, n = 1.
+4. Substitute the values: P = 6000, r = 4/100, n = 1, t = 1.5.
+5. A = 6000 * (1 + 4/100) * (1 + (1/2 * 4)/100).
+6. Simplify the expression: A = 6000 * 1.04 * 1.02.
+7. Calculate the amount: A = 6000 * 1.0608 = 6364.8.
+8. The compound interest when compounded yearly is 6364.8 - 6000 = 364.8.
+9. Calculate the compound interest when interest is compounded half-yearly.
+10. For half-yearly compounding, n = 2.
+11. Substitute the values: P = 6000, r = 4/100, n = 2, t = 1.5.
+12. A = 6000 * (1 + 2/100)^3.
+13. Simplify the expression: A = 6000 * (51/50)^3.
+14. Calculate the amount: A = 6000 * 1.0304 * 1.0304 * 1.0304 = 6367.25.
+15. The compound interest when compounded half-yearly is 6367.25 - 6000 = 367.25.
+16. The difference between the compound interest when compounded yearly and half-yearly is 367.25 - 364.8 = 2.45.
+The answer is E
+    (7)question:the average weight of a , b and c is 45 kg . if the average weight of a and b be 40 kg and that of b and c be 45 kg , then the weight of b is : Answer Choices: (A) 31 kg (B) 32 kg (C) 33 kg (D) 35 kg (E) none of these
+    Hint:1. The average weight of A, B, and C is 45 kg. Therefore, the total weight of A, B, and C is \\( 45 \\times 3 = 135 \\) kg.\n\n2. The average weight of A and B is 40 kg. Therefore, the total weight of A and B is \\( 40 \\times 2 = 80 \\) kg.\n\n3. The average weight of B and C is 45 kg. Therefore, the total weight of B and C is \\( 45 \\times 2 = 90 \\) kg.\n\n4. From the total weights of A, B, and C, and the pairs A and B, and B and C, we can set up equations to find the weight of B.\nAnswer Choices: (A) 31 kg (B) 32 kg (C) 33 kg (D) 35 kg (E) none of these
+    core_question:Given that the average weight of three individuals A, B, and C is 45 kg, the average weight of A and B is 40 kg, and the average weight of B and C is 45 kg, what is the weight of individual B?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. Let a , b , c represent their respective weights.
+2. The average weight of a , b and c is 45 kg.
+3. Therefore, the total weight of a , b and c is 45 * 3 = 135 kg.
+4. We have the equation: a + b + c = 135 ¡­ ( i )
+5. The average weight of a and b is 40 kg.
+6. Therefore, the total weight of a and b is 40 * 2 = 80 kg.
+7. We have the equation: a + b = 80 ¡­ ( ii )
+8. The average weight of b and c is 45 kg.
+9. Therefore, the total weight of b and c is 45 * 2 = 90 kg.
+10. We have the equation: b + c = 90 ¡­ ( iii )
+11. Adding equations ( ii ) and ( iii ), we get: a + b + b + c = 80 + 90
+12. Simplifying, we get: a + 2b + c = 170 ¡­ ( iv )
+13. Subtracting equation ( i ) from equation ( iv ), we get: a + 2b + c - ( a + b + c ) = 170 - 135
+14. Simplifying, we get: b = 35
+15. Therefore, b¡¯s weight is 35 kg.
+The answer is D
+    (8)question:the compound and the simple interests on a certain sum at the same rate of interest for two years are rs . 11730 and rs . 10200 respectively . find the sum. Answer Choices: (A) rs . 17037 (B) rs . 17000 (C) rs . 17276 (D) rs . 170287 (E) rs . 171881
+    Hint:1. Compound Interest (CI) for two years: Rs. 11730\n2. Simple Interest (SI) for two years: Rs. 10200\n3. Both interests are calculated at the same rate.\n4. The time period for both interests is two years.\n5. The goal is to find the principal sum (P).\nAnswer Choices: (A) rs . 17037 (B) rs . 17000 (C) rs . 17276 (D) rs . 170287 (E) rs . 171881
+    core_question:What is the principal sum if the compound interest for two years is Rs. 11730 and the simple interest for the same period is Rs. 10200, given that both are calculated at the same rate of interest?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details !
+    response: Let's think step by step
+1. The simple interest (S.I.) for two years is rs . 10200.
+2. Therefore, the simple interest for one year is 10200 / 2 = rs . 5100.
+3. The compound interest (C.I.) for two years is rs . 11730.
+4. The compound interest for the first year is the same as the simple interest for the first year, which is rs . 5100.
+5. The compound interest for the second year includes interest on the first year's interest.
+6. The interest on the first year's interest is the difference between the compound interest and the simple interest for two years: 11730 - 10200 = rs . 1530.
+7. The interest on the first year's interest is calculated at the same rate of interest.
+8. Let the rate of interest be r% per annum.
+9. The interest on rs . 5100 for one year at r% is rs . 1530.
+10. Therefore, we can set up the equation: (5100 * r) / 100 = 1530.
+11. Solving for r, we get r = (1530 * 100) / 5100 = 30%.
+12. Now, we need to find the principal sum (P).
+13. The simple interest formula is S.I. = (P * r * t) / 100.
+14. Substituting the values, we get 10200 = (P * 30 * 2) / 100.
+15. Simplifying, we get P = (10200 * 100) / (30 * 2) = rs . 17000.
+The answer is B

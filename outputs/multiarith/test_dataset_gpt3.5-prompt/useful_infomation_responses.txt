@@ -1,0 +1,8 @@
+'1. Total books initially: 46\n2. Books taken by the librarian: 10\n3. Remaining books with Oliver: 46 - 10 = 36\n4. Books each shelf can hold: 4\n5. Shelves needed: 36 / 4 = 9 (if there is no remainder)'
+'1. Total number of pictures uploaded by Robin: 36 (31 from phone + 5 from camera).\n2. Total number of albums: 9.\n3. Each album contains an equal number of pictures.\n4. To find the number of pictures per album, divide the total number of pictures by the number of albums: 36 pictures ÷ 9 albums = 4 pictures per album.'
+'1. First round score: +16 points\n2. Second round score: +33 points\n3. Last round score: -48 points\n\nTo find the total points at the end of the game, sum these values:\nTotal points = 16 + 33 - 48 = 1 point.'
+'1. Spring earnings: 4 dollars\n2. Summer earnings: 50 dollars\n3. Expenses on supplies: 4 dollars'
+'1. The store originally had 48 coloring books.\n2. They sold 38 coloring books.\n3. Each shelf holds 5 coloring books.'
+'1. Total seeds Bianca started with: 52 seeds.\n2. Seeds planted in the big garden: 40 seeds.\n3. Seeds per small garden: 2 seeds.'
+'1. Jerry can carry 8 trays at a time.\n2. Jerry needs to pick up a total of 16 trays (9 trays from one table and 7 trays from another).\n3. Each trip allows Jerry to carry 8 trays.'
+'1. Each shelf contains exactly 9 books.\n2. There are 6 shelves of mystery books.\n3. There are 2 shelves of picture books.'

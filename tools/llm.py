@@ -32,6 +32,8 @@ import os
 import backoff
 import requests
 from requests.auth import HTTPBasicAuth
+from openai import OpenAI
+
 
 class BaseModel(ABC):
     def __init__(self, rateLimit={}, ) -> None:
@@ -53,21 +55,19 @@ class BaseModel(ABC):
             # SPR : second per request (low speed request)
             self._lastTime = datetime.now()
 
-
-    def configure_params(self, temperature=1.0, top_p=0.95, top_k=40, max_output_tokens=1024, candidate_count=1, repetition_penalty=1, stream=False):
-        self.temperature=temperature
-        self.top_p=top_p
-        self.top_k=top_k
-        self.max_output_tokens=max_output_tokens
+    def configure_params(self, temperature=1.0, top_p=0.95, top_k=40, max_output_tokens=2048, candidate_count=1,
+                         repetition_penalty=1, stream=False):
+        self.temperature = temperature
+        self.top_p = top_p
+        self.top_k = top_k
+        self.max_output_tokens = max_output_tokens
         self.candidate_count = candidate_count
         self.repetition_penalty = repetition_penalty
         self.stream = stream
 
-
     @abstractmethod
-    def generate(self, prompt):
+    def generate(self, prompt, n=1):
         pass
-    
 
     def generate_with_price(self, prompt):
         """return both the response of prompt and its cost.
@@ -76,8 +76,7 @@ class BaseModel(ABC):
             prompt (str): the prompt passed into the api.
         """
         return self.generate(prompt), 0.1
-        
-        
+
     def estimate_cost(self, input_file, sample_num=100):
         """For given dataset, esimate it cost for specifically api call.
 
@@ -110,13 +109,12 @@ class BaseModel(ABC):
         except:
             print("not find prompt key in data file")
             exit()
-        
 
         lock = threading.Lock()
 
         output_res = []
         # call api
-        for index, data in enumerate(sampled_data):    
+        for index, data in enumerate(sampled_data):
             while True:
                 lock.acquire()
                 rateLimit = self.isRateLimited()
@@ -125,14 +123,17 @@ class BaseModel(ABC):
                     time.sleep(1)
                 else:
                     break
+
             def _my_function(data, output_res, progress_bar, lock):
                 max_req = 10
                 req_time = 0
-                while req_time<max_req:
+                while req_time < max_req:
                     req_time += 1
                     try:
                         response, price = self.generate_with_price(data)
-                        if response!="<error>":
+                        print(response)
+                        print(price)
+                        if '<error>' not in response:
                             break
                     except:
                         while True:
@@ -145,42 +146,41 @@ class BaseModel(ABC):
                                 break
 
                 if req_time >= max_req:
-                    print("Intnet Error!")
+                    print("Intnet Error1!")
                     response = "<error>"
                     price = 0
-                
+
                 if response in ["", None]:
                     response = ""
-            
+
                 lock.acquire()
                 output_res.append((response, price))
                 progress_bar.update(1)
                 lock.release()
-            
-            thread = threading.Thread(target=_my_function,args=(data, output_res, progress_bar, lock))
+
+            thread = threading.Thread(target=_my_function, args=(data, output_res, progress_bar, lock))
             self.thread_pools.append(thread)
             thread.start()
-        
+
         for thread in self.thread_pools:
             thread.join()
-            
+
         self.thread_pools.clear()
 
         valid_response = 0
         valid_price = 0
 
         for response, price in output_res:
-            if response!="<error>":
+            if '<error>' not in response:
                 valid_response += 1
                 valid_price += price
-            
+
         estimated_per_price = valid_price / valid_response
         estimated_total_price = estimated_per_price * dataset_num
 
         return estimated_per_price, estimated_total_price
 
-    
-    def isRateLimited(self)->bool:
+    def isRateLimited(self) -> bool:
         if "RPM" in self.rateLimit:
             return self._isRateLimited_RPM()
         elif "SPR" in self.rateLimit:
@@ -189,30 +189,27 @@ class BaseModel(ABC):
             print("please check! Not rate limit found!")
             return False
 
-
-    def _isRateLimited_RPM(self)->bool:
+    def _isRateLimited_RPM(self) -> bool:
         cur_time = datetime.now().minute
         if cur_time != self._minute:
             # time diff, reset avail request
             self._avail_req = self.rateLimit["RPM"]
             self._minute = cur_time
-        
+
         if self._avail_req > 0:
             self._avail_req -= 1
             return False
         else:
             return True
 
-
-    def _isRateLimited_SPR(self)->bool:
+    def _isRateLimited_SPR(self) -> bool:
         cur_time = datetime.now()
-        diff = (cur_time-self._lastTime).total_seconds()
-        if diff >= (self.rateLimit["SPR"]+0.1):
+        diff = (cur_time - self._lastTime).total_seconds()
+        if diff >= (self.rateLimit["SPR"] + 0.1):
             self._lastTime = cur_time
             return False
         else:
-            return True        
-    
+            return True
 
     def dataset_generate(self, input_dataset, output_file, batch_size=10):
         """
@@ -221,17 +218,23 @@ class BaseModel(ABC):
             output_file (str): the target save path
             batch_size (int, optional): write frequence. Defaults to 50.
         """
-        
+
         # thread func
         def my_function(index, data, output_res, progress_bar, lock):
             max_req = 5
             req_time = 0
-            while req_time<max_req:
+            while req_time < max_req:
                 req_time += 1
+                # response = self.generate(data)
+                # # print(response)
+                # print(response)
+                # if response != "<error>":
+                #     break
                 try:
                     response = self.generate(data)
                     # print(response)
-                    if response!="<error>":
+                    # print(response)
+                    if '<error>' not in response:
                         break
                 except:
                     while True:
@@ -244,64 +247,66 @@ class BaseModel(ABC):
                             t = random.random() + 1
                             time.sleep(t)
                             break
-                        
 
             if req_time >= max_req:
-                print("Intnet Error!")
+                print("Intnet Error2!")
                 response = "<error>"
-                
 
             if response in ["", None]:
-                response = ""
-            
+                response = "<error>"
+                # response = ""
+
             lock.acquire()
-            output_res.append((index,response))
+            output_res.append((index, response))
             progress_bar.update(1)
             lock.release()
-        
-        
+
         lock = threading.Lock()
         err_responses = []
-        
+
+        # before start, check if output file exist
         if os.path.exists(output_file):
             line = 0
-            with open(output_file) as f:
+            with open(output_file, encoding='utf-8') as f:
                 while True:
                     res = f.readline().strip()
                     if not res:
                         break
-                    
+
                     # res = eval(res)
-                    if res == "<error>":
+                    # if res == "<error>":
+                    if '<error>' in res:
                         try:
                             err_responses.append((line, input_dataset[line]))
                         except:
                             print("output file error!")
                             exit()
-                    line+=1
-                    
+                    line += 1
+
             if line != len(input_dataset):
                 print(f"Continue from Line {line}")
-            
+                print(f"Continue from input_dataset {len(input_dataset)}")
+                # return
+
             start_point = line
         else:
             start_point = 0
-        
+
         dataset_nums = len(input_dataset)
         current_num = start_point
-        
-        progress_bar = tqdm.tqdm(total=(dataset_nums-start_point))
-        
-        
+
+        progress_bar = tqdm.tqdm(total=(dataset_nums - start_point))
+
+        # start
         while current_num < dataset_nums:
             start_n = progress_bar.n
-            end_num = current_num+batch_size if (current_num+batch_size) <= dataset_nums else dataset_nums
-            batch_data = input_dataset[current_num: end_num ]
-            current_num += len(batch_data)
-            
+            end_num = current_num + batch_size if (current_num + batch_size) <= dataset_nums else dataset_nums
+            batch_data = input_dataset[current_num: end_num]
+            #current_num += len(batch_data)
+
             output_res = []
             # call api
-            for index,data in enumerate(batch_data):    
+            for index, data in enumerate(batch_data):
                 while True:
                     lock.acquire()
                     rateLimit = self.isRateLimited()
@@ -309,36 +314,41 @@ class BaseModel(ABC):
                     if rateLimit:
                         time.sleep(1)
                     else:
-                        break  
-                thread = threading.Thread(target=my_function,args=(index, data, output_res, progress_bar, lock))
+                        break
+                thread = threading.Thread(target=my_function, args=(index, data, output_res, progress_bar, lock))
                 self.thread_pools.append(thread)
                 thread.start()
                 try:
-                    sleep_time =  1 / self.rateLimit["RPM"]
+                    sleep_time = 1 / self.rateLimit["RPM"]
                 except:
                     sleep_time = 0
                 time.sleep(sleep_time)
-            
+
             for thread in self.thread_pools:
                 thread.join()
-                
-            
+
             self.thread_pools.clear()
-            
+
             # sort response
             sorted_responses = sorted(output_res, key=lambda x: x[0])
             responses = [i[1] for i in sorted_responses]
-        
+
             # write result
-            with open(output_file, "a") as f:
-                for i,res in enumerate(responses):
-                    if res == "<error>":
+            with open(output_file, "a", encoding='utf-8') as f:
+                for i, res in enumerate(responses):
+                    # if res == "<error>":
+                    if '<error>' in res:
                         # record error responses
-                        err_responses.append((current_num+i, batch_data[i]))
+                        print("all errors")
+                        err_responses.append((current_num + i, batch_data[i]))
                     f.write(repr(res) + "\n")
-        
+            #修正错误偏移
+            current_num += len(batch_data)
+
         progress_bar.close()
-        
+
+        # end
+        # if there are errors, reprocess them
         corrected_responses = []
         turn = 1
         while len(err_responses) > 0:
@@ -347,7 +357,7 @@ class BaseModel(ABC):
             pbar = tqdm.tqdm(total=len(err_responses))
             output_responses = []
             # call api
-            for err_res in err_responses:    
+            for err_res in err_responses:
                 while True:
                     lock.acquire()
                     rateLimit = self.isRateLimited()
@@ -356,59 +366,58 @@ class BaseModel(ABC):
                         time.sleep(1)
                     else:
                         break
-    
-                thread = threading.Thread(target=my_function,args=(err_res[0], err_res[1], output_responses, pbar, lock))
+
+                thread = threading.Thread(target=my_function,
+                                          args=(err_res[0], err_res[1], output_responses, pbar, lock))
                 self.thread_pools.append(thread)
                 thread.start()
-            
+
             for thread in self.thread_pools:
                 thread.join()
-            
+
             self.thread_pools.clear()
-            
+
             # sort response
             sorted_responses = sorted(output_responses, key=lambda x: x[0])
-            
+
             still_err_responses = []
             for i in range(len(err_responses)):
-                if sorted_responses[i][1] == "<error>":
+                if '<error>' in sorted_responses[i][1]:
                     still_err_responses.append(err_responses[i])
                 else:
                     corrected_responses.append(sorted_responses[i])
-            
+
             err_responses = still_err_responses
 
             pbar.close()
-            
+
         if len(err_responses) == 0:
             print("Finish all errors")
         else:
             print(f"There are {len(err_responses)} errors.")
-            
+
         import tempfile
         corrected_indice = [i[0] for i in corrected_responses]
         if corrected_responses != []:
-            with open(output_file, "r") as f, tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
-                i=0
+            with open(output_file, "r", encoding='utf-8') as f, tempfile.NamedTemporaryFile(mode='w', delete=False,
+                                                                                            encoding='utf-8') as tmp_file:
+                i = 0
                 while True:
                     line = f.readline().strip()
                     if not line:
                         break
-                    if eval(line)!="<error>":
-                        tmp_file.write(line+"\n")
+                    if '<error>' not in eval(line):
+                        tmp_file.write(line + "\n")
                     else:
                         if i in corrected_indice:
                             index = corrected_indice.index(i)
                             corr_response = repr(corrected_responses[index][1])
-                            tmp_file.write(corr_response+"\n")
+                            tmp_file.write(corr_response + "\n")
                         else:
                             tmp_file.write("'<error>'\n")
-                    i+=1
+                    i += 1
             shutil.move(tmp_file.name, output_file)
-            
-            
-        
-    
+
     def file_generate(self, input_file, output_file, batch_size=1000):
         """
         在给定的速率下，发起多个请求
@@ -421,7 +430,6 @@ class BaseModel(ABC):
         assert os.path.exists(input_file)
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
-
         current_pos = 0
 
         result = subprocess.run(["wc", "-l", input_file], capture_output=True, text=True)
@@ -429,13 +437,13 @@ class BaseModel(ABC):
         progress_bar = tqdm.tqdm(total=line_count)
 
         lock = threading.Lock()
-        
+
         while current_pos < line_count:
             # get new data
-            with open(input_file,"r") as file:
+            with open(input_file, "r", encoding='utf-8') as file:
                 # 一次读取batch_size行
                 batch = []
-                for line in itertools.islice(file, current_pos, current_pos+batch_size):
+                for line in itertools.islice(file, current_pos, current_pos + batch_size):
                     batch.append(line)
                 current_pos += len(batch)
             try:
@@ -443,10 +451,10 @@ class BaseModel(ABC):
             except:
                 print("not find prompt key in data file")
                 exit()
-            
+
             output_res = []
             # call api
-            for index,data in enumerate(batch_data):    
+            for index, data in enumerate(batch_data):
                 while True:
                     lock.acquire()
                     rateLimit = self.isRateLimited()
@@ -459,11 +467,11 @@ class BaseModel(ABC):
                 def my_function(index, data, output_res, progress_bar, lock):
                     max_req = 10
                     req_time = 0
-                    while req_time<max_req:
+                    while req_time < max_req:
                         req_time += 1
                         try:
                             response = self.generate(data)
-                            if response!="<error>":
+                            if '<error>' not in response:
                                 break
                         except:
                             while True:
@@ -476,86 +484,84 @@ class BaseModel(ABC):
                                     break
 
                     if req_time >= max_req:
-                        print("Intnet error.")
+                        print("Intnet error3.")
                         response = "<error>"
 
                     if response in ["", None]:
                         response = ""
-                    
+
                     lock.acquire()
-                    output_res.append((index,response))
+                    output_res.append((index, response))
                     progress_bar.update(1)
                     lock.release()
-                
-                
-                thread = threading.Thread(target=my_function,args=(index, data, output_res, progress_bar, lock))
+
+                thread = threading.Thread(target=my_function, args=(index, data, output_res, progress_bar, lock))
                 self.thread_pools.append(thread)
                 thread.start()
-            
+
             # 等待所有线程执行完毕
             for thread in self.thread_pools:
                 thread.join()
-            
+
             self.thread_pools.clear()
-            
+
             # sort response
             sorted_responses = sorted(output_res, key=lambda x: x[0])
             responses = [i[1] for i in sorted_responses]
             # write result
-            with open(output_file, "a") as f:
+            with open(output_file, "a", encoding='utf-8') as f:
                 for res in responses:
                     output = {"response": res}
                     output_str = json.dumps(output, ensure_ascii=False)
                     f.write(output_str + "\n")
-        
-        progress_bar.close()
-    
 
-    def recurring_response_get(self, input_file, output_file, batch_size=1000):  
+        progress_bar.close()
+
+    def recurring_response_get(self, input_file, output_file, batch_size=1000):
 
         # check if file exist
         import os
         assert os.path.exists(input_file)
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
-        rounds=0
-        errors=[]
-        correction=[]
+        rounds = 0
+        errors = []
+        correction = []
         lock = threading.Lock()
-        output_res=[]
+        output_res = []
         current_pos = 0
-        with open(input_file,"r") as f:
-            first_line=f.readline()
+        with open(input_file, "r") as f:
+            first_line = f.readline()
         f.close()
-        line=json.loads(first_line.strip())
-        if not("prompt" in line):
+        line = json.loads(first_line.strip())
+        if not ("prompt" in line):
             print("wrong input file!")
-            
-        if(os.path.exists(output_file)):
+
+        if (os.path.exists(output_file)):
             print("already have output_file")
         else:
             self.file_generate(input_file, output_file, batch_size)
-        
+
         import jsonlines
-        with open(output_file,'r')as f2:
-            for index,data in enumerate(jsonlines.Reader(f2)):
-                if(data['response']=='<error>'):
-                    line=linecache.getline(input_file, int(index+1))
-                    print(input_file,index)
-                    print(line)
-                    line_data=json.loads(line)
-                    errors.append((index,line_data['prompt']))
-        output_res=[]    
-        while(rounds<=5):
-            correction=[]
+        with open(output_file, 'r') as f2:
+            for index, data in enumerate(jsonlines.Reader(f2)):
+                if ('<error>' in data['response']):
+                    line = linecache.getline(input_file, int(index + 1))
+                    # print(input_file,index)
+                    # print(line)
+                    line_data = json.loads(line)
+                    errors.append((index, line_data['prompt']))
+        output_res = []
+        while (rounds <= 5):
+            correction = []
             time.sleep(5)
-            if(len(errors)==0):
+            if (len(errors) == 0):
                 print(f"congratulations! no errors in round {rounds}")
                 break
             else:
                 print(f"round {rounds}!")
-            line_count=len(errors)
+            line_count = len(errors)
             progress_bar = tqdm.tqdm(total=line_count)
-            for index,error in enumerate(errors):
+            for index, error in enumerate(errors):
                 while True:
                     lock.acquire()
                     rateLimit = self.isRateLimited()
@@ -564,14 +570,15 @@ class BaseModel(ABC):
                         time.sleep(1)
                     else:
                         break
-                def correct_function(error, output_res,correction, progress_bar, lock):
+
+                def correct_function(error, output_res, correction, progress_bar, lock):
                     max_req = 10
                     req_time = 0
-                    while req_time<max_req:
+                    while req_time < max_req:
                         req_time += 1
                         try:
                             response = self.generate(error[1])
-                            if response!="<error>":
+                            if '<error>' not in response:
                                 break
                         except:
                             # 重新发起请求前确保不会超过速率限制
@@ -584,89 +591,100 @@ class BaseModel(ABC):
                                 else:
                                     break
                     if req_time >= max_req:
-                        print("多次网络请求错误")
+                        print("Multiple network request errors")
                         response = "<error>"
                     if response in ["", None]:
                         response = ""
                     lock.acquire()
-                    if(response!='<error>'):
+                    if ('<error>' not in response):
                         progress_bar.update(1)
-                        output_res.append((error[0],response))
+                        output_res.append((error[0], response))
                         correction.append(error)
                     lock.release()
-                thread = threading.Thread(target=correct_function,args=(error, output_res, correction,progress_bar, lock))
+
+                thread = threading.Thread(target=correct_function,
+                                          args=(error, output_res, correction, progress_bar, lock))
                 self.thread_pools.append(thread)
                 thread.start()
             for thread in self.thread_pools:
                 thread.join()
             self.thread_pools.clear()
             for error in correction:
-                if(error in errors):
+                if (error in errors):
                     errors.remove(error)
                 else:
                     print(error)
                     print(errors)
-            progress_bar.close() 
-            if(len(errors)!=0):
-                num=len(errors)
+            progress_bar.close()
+            if (len(errors) != 0):
+                num = len(errors)
                 print(f"There are {num} errors left in our response,the index of them are:")
                 for error in errors:
                     print(error[0])
-            rounds+=1
-        if(len(errors)!=0):
+            rounds += 1
+        if (len(errors) != 0):
             for error in errors:
                 output_res.append((error))
-        if(len(output_res)!=0):
+        if (len(output_res) != 0):
             sorted_responses = sorted(output_res, key=lambda x: x[0])
             responses = [i[1] for i in sorted_responses]
             print(f"the length of sorted_responses is {len(sorted_responses)}")
-            for index,data in enumerate(sorted_responses):
-                print(index,data)
+            for index, data in enumerate(sorted_responses):
+                print(index, data)
             import tempfile
 
             with open(output_file, "r") as f, tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
-                i=0
-                for index,data in enumerate(jsonlines.Reader(f)):
-                    if(data['response']!="<error>"):
-                        json_data=json.dumps(data, ensure_ascii=False)
-                        tmp_file.write(json_data+ "\n")
+                i = 0
+                for index, data in enumerate(jsonlines.Reader(f)):
+                    if '<error>' not in data['response']:
+                        json_data = json.dumps(data, ensure_ascii=False)
+                        tmp_file.write(json_data + "\n")
                     else:
-                        if(index==sorted_responses[i][0]):
-                            temp={"response":responses[i]}
-                            json_data=json.dumps(temp, ensure_ascii=False)
-                            tmp_file.write(json_data+ "\n")
+                        if (index == sorted_responses[i][0]):
+                            temp = {"response": responses[i]}
+                            json_data = json.dumps(temp, ensure_ascii=False)
+                            tmp_file.write(json_data + "\n")
                         else:
                             print(f'wrong in {index}!!!!!')
-                        i+=1
-            
+                        i += 1
+
             shutil.move(tmp_file.name, output_file)
 
-        
+
 class ChatGpt(BaseModel):
-    def __init__(self, model="gpt-3.5-turbo",api_key=None) -> None:
+    def __init__(self, model="gpt-3.5-turbo", api_key=None) -> None:
         # gpt-3.5-turbo
         # gpt-4
-        rateLimit={
-            "RPM":200
-            }
-        
-        super().__init__(rateLimit)           
-        self.model=model
-        self.api_key=api_key
-        self.api_base = "https://api.openai.com/v1/chat/completions"
+        rateLimit = {
+            "RPM": 100
+        }
+        # "gpt-3.5-turbo"
+        super().__init__(rateLimit)
+        self.api_key = api_key
+        self.model = model
         self.configure_params(temperature=0)
-    
+
     from wrapt_timeout_decorator import timeout
-    
-    @staticmethod
-    @timeout(240)
-    def completions_with_backoff(**kwargs):
-        return openai.ChatCompletion.create(**kwargs)
+
+    # @staticmethod
+    # @timeout(240)
+    def completions_with_backoff(self, **kwargs):
+        # proxy_url = 'http://127.0.0.1'
+        # proxy_port = '7890'  # !!!please replace it with your own port
+        #
+        # # Set the http_proxy and https_proxy environment variables
+        # os.environ['http_proxy'] = f'{proxy_url}:{proxy_port}'
+        # os.environ['https_proxy'] = f'{proxy_url}:{proxy_port}'
+
+        client = OpenAI(
+            api_key=self.api_key
+        )
+        return client.chat.completions.create(**kwargs)
 
     def raw_request(self, model, messages, temperature, timeout=5):
         import requests
 
-        url = "https://api.openai.com/v1/chat/completions"
+        url = ""
         headers = {
             "Content-Type": "application/json",
             "Authorization": "Bearer {}".format(self.api_key)
@@ -678,26 +696,51 @@ class ChatGpt(BaseModel):
             "temperature": temperature
         }
 
-        response = requests.post(url, headers=headers, json=data, timeout=timeout) 
+        response = requests.post(url, headers=headers, json=data, timeout=timeout)
         result = response.json()
-        return result          
-    
-    def generate(self, prompt):
+        return result
+
+    def generate(self, prompt, n=1):
         messages = [{"role": "user", "content": prompt}]
-        openai.api_base = self.api_base
-        response = self.completions_with_backoff(
-        model=self.model,
-        messages=messages,
-        temperature=self.temperature,
-        )
 
-        return response.choices[0].message["content"]    
 
-    
+        # response = self.completions_with_backoff(
+        #     model=self.model,
+        #     messages=messages,
+        #     temperature=self.temperature,
+        #     max_tokens=self.max_output_tokens,
+        #     stream=self.stream,
+        #     timeout=100
+        # )
+
+        response = None
+        for attempt in range(10):
+            try:
+                response = self.completions_with_backoff(
+                    model=self.model,
+                    messages=messages,
+                    temperature=self.temperature,
+                    max_tokens=self.max_output_tokens,
+                    stream=self.stream,
+                    timeout=100
+                )
+                break
+            except Exception as e:
+                if attempt < 9:
+                    time.sleep(2)
+                else:
+                    print(f"Failed after 10 attempts: {e}")
+                    exit(1)
+
+        print(response.choices[0].message.content)
+        return response.choices[0].message.content
+
+
 
 api_secret_keys = {
-    "ChatGpt" : ""
+    "ChatGpt": ""
 }
+
 
 def main(args):
     model_class = globals()[args.model]
@@ -707,8 +750,9 @@ def main(args):
     model = model_class(api_key=args.api_secret_key)
 
     if args.estimate:
-        percost,totalcost = model.estimate_cost(args.input_file, args.sample_number)
-        print(f"For this dataset, estimated per request cost is: ** {percost} ** , estimated total cost is: ** {totalcost} **")
+        percost, totalcost = model.estimate_cost(args.input_file, args.sample_number)
+        print(
+            f"For this dataset, estimated per request cost is: ** {percost} ** , estimated total cost is: ** {totalcost} **")
     else:
         # model.recurring_response_get(args.input_file, args.output_file, args.batch_size)
         model.recurring_response_get(args.input_file, args.output_file, args.batch_size)
@@ -720,11 +764,14 @@ if __name__ == "__main__":
     parser.add_argument("--model", type=str, help="Model class name", choices=["ChatGpt"])
     parser.add_argument("--api_secret_key", type=str, help="Your api_secret_key", default="default")
     parser.add_argument("--batch_size", type=int, default=1000, help="Batch size (default: 1000)")
-    parser.add_argument("--input_file", type=str, default="./test.jsonl", help="Input file path (default: ./test.jsonl)")
-    parser.add_argument("--output_file", type=str, default="./response.txt", help="Output file path (default: ./response.txt)")
+    parser.add_argument("--input_file", type=str, default="./test.jsonl",
+                        help="Input file path (default: ./test.jsonl)")
+    parser.add_argument("--output_file", type=str, default="./response.txt",
+                        help="Output file path (default: ./response.txt)")
 
     parser.add_argument("--estimate", action="store_true", help="whether to estimate the price")
-    parser.add_argument("--sample_number", type=int, default=100, help="the sampled dataset number used to estimate the api call price.")
+    parser.add_argument("--sample_number", type=int, default=100,
+                        help="the sampled dataset number used to estimate the api call price.")
 
     args = parser.parse_args()
     main(args)

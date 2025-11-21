@@ -1,0 +1,4 @@
+Suppose that $A$, $B$, and $C$ are non-zero distinct digits less than $6$, and suppose we have ${AB_6}+{C_6}={C}0_6$ and ${AB_6}+{BA_6}={CC_6}$. Find the three-digit number ${ABC}$. (Interpret $AB_6$ as a base-6 number with digits $A$ and $B$, not as $A$ times $B$. The other expressions should be interpreted in this way as well).
+Let $\tau (n)$ denote the number of positive integer divisors of $n$ (including $1$ and $n$). Find the sum of the six least positive integers $n$ that are solutions to $\tau (n) + \tau (n+1) = 7$.
+What is the sum of all the positive two-digit integers divisible by both the sum and product of their digits?
+Let $m$ be the smallest integer whose cube root is of the form $n+r$, where $n$ is a positive integer and $r$ is a positive real number less than $1/1000$. Find $n$.

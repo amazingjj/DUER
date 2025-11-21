@@ -1,0 +1,8 @@
+'How much did Joan spend at the music store?'
+'How many miles did Trisha walk in total during her trip to buy souvenirs in New York City?'
+'How many miles did Nina run in total during her running drill?'
+'How many miles did Heather walk in total during her visit to the county fair, including her walks from the car to the entrance, from the entrance to the carnival rides, and from the carnival rides back to the car?'
+'How many bottles of mustard does the waitress find in total after checking the first, second, and third tables?'
+'How many leftover tarts did the restaurant have in total?'
+'How many pounds of trail mix did Brandy make using 0.16666666666666666 pound of peanuts, 0.16666666666666666 pound of chocolate chips, and 0.08333333333333333 pound of raisins?'
+'How many cartons of ice cream did Allie have in total after adding up the leftovers of rocky road, cookie dough, and strawberry cheesecake ice creams?'

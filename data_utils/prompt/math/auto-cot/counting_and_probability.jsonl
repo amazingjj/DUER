@@ -1,0 +1,30 @@
+[
+    {
+        "problem": "Thirty identical toothpicks were used to create the figure below. There are over 25 triangles in the figure. What is the fewest number of toothpicks that could be removed so that no triangles remain?\n\n[asy]\ndraw((0,0)--(8,0), linewidth(1));\ndraw(2dir(60)--(2dir(60)+(6,0)), linewidth(1));\ndraw(4dir(60)--(4dir(60)+(4,0)), linewidth(1));\ndraw(6dir(60)--(6dir(60)+(2,0)), linewidth(1));\n\ndraw((0,0)--8dir(60),linewidth(1));\ndraw((2,0)--(6dir(60)+(2,0)),linewidth(1));\ndraw((4,0)--(4dir(60)+(4,0)),linewidth(1));\ndraw((6,0)--(2dir(60)+(6,0)),linewidth(1));\n\ndraw(2dir(60)--(2,0),linewidth(1));\ndraw(4dir(60)--(4,0),linewidth(1));\ndraw(6dir(60)--(6,0),linewidth(1));\ndraw(8dir(60)--(8,0),linewidth(1));\n[/asy]",
+        "level": "Level 4",
+        "type": "Counting & Probability",
+        "solution": "Call a triangle with side length 1 toothpick a 1-triangle. The figure contains 10 upward-pointing 1-triangles and 6 downward-pointing 1-triangles. Removing a toothpick destroys at most one upward-pointing 1-triangle, so we must remove at least 10 toothpicks. Any triangle must have at least one horizontal toothpick, so if we remove all $\\boxed{10}$ horizontal toothpicks, no triangles remain. Since we have to remove at least 10, this is the minimum.",
+        "answer": "10"
+    },
+    {
+        "problem": "How many three-digit numbers are multiples of neither 5 nor 7?",
+        "level": "Level 5",
+        "type": "Counting & Probability",
+        "solution": "It's easy to count the number of three-digit numbers which are multiples of 5 or 7: the smallest multiple of 7 which is a three-digit number is $15 \\times 7 = 105$, and the largest multiple of 7 that is a three-digit number is $142 \\times 7 = 994$.  Therefore, there are $142-15+1 = 128$ three-digit numbers that are multiples of 7.  The smallest multiple of 5 that is a three-digit number is $20\\times 5 = 100$, and the largest multiple of 5 that is a three digit number is $199\\times 5 =995$. So there are $199-20+1=180$ multiples of 5.\n\nNow notice that we have counted some numbers twice: those multiples of $5\\times7=35$. The smallest multiple of 35 is $3\\times 35 = 105$, the largest multiple of 35 is $28\\times35 =980$. So there are $28-3+1=26$ multiples of 35.\n\nWe have 128 multiples of 7 and 180 multiples of 5, but we count 26 multiples twice.  So, there are a total of $128+180-26 = 282$ distinct three-digit numbers that are multiples of 5 or 7 (or both).   There are 900 three-digit numbers in total (from 100 to 999), so there are $900-282=\\boxed{618}$ three-digit numbers that are not multiples of 7 nor 5.",
+        "answer": "618"
+    },
+    {
+        "problem": "Two different integers are randomly chosen from the set $$\\{ -5, -8, 7, 4, -2 \\}.$$ What is the probability that their product is negative? Express your answer as a common fraction.",
+        "level": "Level 3",
+        "type": "Counting & Probability",
+        "solution": "We don't consider the order that we choose integers in this problem, meaning that choosing a $-5$ and then a $-8$ is the same as choosing a $-8$ and then a $-5$. The product of two integers is negative if one integer is positive and the other is negative. There are three ways to choose a negative integer and two ways to choose a positive integer, for a total of $3\\cdot2=6$ ways to choose both integers. There are $$\\binom{5}{2}=\\frac{5!}{2!3!}=10$$ ways to choose any two different integers, so the probability that the two integers have a negative product is $6/10=\\boxed{\\frac{3}{5}}$.",
+        "answer": "\\frac{3}{5}"
+    },
+    {
+        "problem": "At the Gooddog Obedience School, dogs can learn to do three tricks: sit, stay, and roll over. Of the dogs at the school: \\begin{tabular}{l@{\\qquad}l}\n50 dogs can sit & 17 dogs can sit and stay \\\\\n29 dogs can stay & 12 dogs can stay and roll over \\\\\n34 dogs can roll over & 18 dogs can sit and roll over \\\\\n9 dogs can do all three & 9 dogs can do none\n\\end{tabular} How many dogs are in the school?",
+        "level": "Level 3",
+        "type": "Counting & Probability",
+        "solution": "We draw a Venn Diagram with three circles, and fill it in starting with the center and proceeding outwards. There are $9$ dogs that can do all three tricks. Since $18$ dogs can sit and roll over (and possibly stay) and $9$ dogs can sit, roll over, and stay, there are $18 - 9 = 9$ dogs that can sit, roll over, but not stay. Using the same reasoning, there are $12 - 9 = 3$ dogs that can stay, rollover, but not sit, and $17 - 9 = 8$ dogs that can sit, stay, but not rollover.\n\n[asy]unitsize(50);\nimport graph;\npair A = (0,-1); pair B = (sqrt(3)/2,1/2); pair C = (-sqrt(3)/2,1/2);\ndraw(Circle(A,1.2) ^^ Circle(B,1.2) ^^ Circle(C,1.2));\nlabel(\"13\",A); label(\"9\",B); label(\"24\",C); label(\"$9$\",(0,0)); label(\"$8$\",(B+C)/2); label(\"$3$\",(A+B)/2); label(\"$9$\",(A+C)/2);\nlabel(\"Sit\",2.4C,C); label(\"Stay\",2.4B,B); label(\"Roll Over\", 2.4A,A);[/asy]\n\nSo now we know how many dogs can do multiple tricks, and exactly what tricks they can do. Since $50$ dogs can sit, $9$ dogs can sit and rollover only, $8$ dogs can sit and stay only, and $9$ dogs can do all three tricks, the remaining dogs that can't do multiple tricks can only sit, and there are $50 - 9 - 8 - 9 = 24$ of these. Using the same reasoning, we find that $29 - 3 - 8 - 9 = 9$ dogs can only stay and $34 - 9 - 3 - 9 = 13$ dogs can only roll over.\n\nSince $9$ dogs can do no tricks, we can add that to each category in the Venn Diagram to find that there are a total of $9 + 9 + 3 + 8 + 24 + 13 + 9 + 9 = \\boxed{84}$ dogs.",
+        "answer": "84"
+    }
+]

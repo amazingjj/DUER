@@ -1,0 +1,7 @@
+The numbers $1, 2, 3, 4, 5, 6, 7,$ and $8$ are randomly written on the faces of a regular octahedron so that each face contains a different number. The probability that no two consecutive numbers, where $8$ and $1$ are considered to be consecutive, are written on faces that share an edge is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$
+
+Three cards are dealt at random from a standard deck of 52 cards.  What is the probability that the first card is a 4, the second card is a $\clubsuit$, and the third card is a 2?
+In a group of nine people each person shakes hands with exactly two of the other people from the group. Let $N$ be the number of ways this handshaking can occur. Consider two handshaking arrangements different if and only if at least two people who shake hands under one arrangement do not shake hands under the other arrangement. Find the remainder when $N$ is divided by $1000$.
+
+A standard six-sided fair die is rolled four times. The probability that the product of all four numbers rolled is a perfect square is $\tfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.
+

@@ -1,0 +1,4 @@
+'The core question is: Given that \\(\\sum_{k=1}^{35}\\sin 5k=\\tan \\frac{m}{n},\\) where angles are measured in degrees, and \\(m\\) and \\(n\\) are relatively prime positive integers that satisfy \\(\\frac{m}{n}<90,\\) find \\(m+n.\\)'
+'What is the area of triangle \\(ABC\\)?'
+'The core question is: How many complex numbers \\( z \\) such that \\( |z| < 30 \\) satisfy the equation \\( e^z = \\frac{z - 1}{z + 1} \\)?'
+'Find a vector \\(\\begin{pmatrix}a \\\\ b \\end{pmatrix}\\) that points from the origin to the line parameterized by \n\\[\nx = 4t + 2, \\quad y = t + 2\n\\]\nand is parallel to the vector \\(\\begin{pmatrix}2 \\\\ 1 \\end{pmatrix}\\).'

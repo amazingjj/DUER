@@ -1,0 +1,155 @@
+(1)question:Angelo and Melanie want to plan how many hours over the next week they should study together for their test next week. They have 2 chapters of their textbook to study and 4 worksheets to memorize. They figure out that they should dedicate 3 hours to each chapter of their textbook and 1.5 hours for each worksheet. If they plan to study no more than 4 hours each day, how many days should they plan to study total over the next week if they take a 10-minute break every hour, include 3 10-minute snack breaks each day, and 30 minutes for lunch each day?
+    Hint:- Angelo and Melanie need to study 2 chapters of their textbook and 4 worksheets.\n- They plan to dedicate 3 hours to each chapter and 1.5 hours to each worksheet.\n- They can study no more than 4 hours each day.\n- They take a 10-minute break every hour.\n- They include 3 10-minute snack breaks each day.\n- They allocate 30 minutes for lunch each day.
+    core_question:How many days should Angelo and Melanie plan to study together over the next week if they can study no more than 4 hours each day, including breaks and meal times, in order to cover 2 chapters of their textbook and 4 worksheets?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nAngelo and Melanie think they should dedicate 3 hours to each of the 2 chapters. Therefore, they need 3 hours x 2 chapters = <<3*2=6>>6 hours total for the chapters.
+For the worksheets, they plan to dedicate 1.5 hours for each worksheet. Therefore, they need 1.5 hours x 4 worksheets = <<1.5*4=6>>6 hours total for the worksheets.
+Adding the time for chapters and worksheets, they need 6 hours + 6 hours = <<6+6=12>>12 hours total to study.
+They plan to study no more than 4 hours each day. Therefore, they need 12 hours / 4 hours per day = <<12/4=3>>3 days to study.
+However, they need to include time for breaks and lunch. They want to take a 10-minute break every hour. Therefore, for 12 hours of study, they need 12 hours x 10 minutes = <<12*10=120>>120 minutes for breaks.
+They also want to include 3 10-minute snack breaks each day. Therefore, they need 3 x 10 minutes = <<3*10=30>>30 minutes for snack breaks each day.
+They want to include 30 minutes for lunch each day. Therefore, the total time for breaks and lunch each day is 120 minutes for breaks + 30 minutes for snack breaks + 30 minutes for lunch = <<120+30+30=180>>180 minutes, or 180 / 60 minutes per hour = <<180/60=3>>3 extra hours.
+So, Angelo and Melanie need to plan 12 hours to study + 3 hours of breaks = <<12+3=15>>15 hours total.
+They want to study no more than 4 hours each day. Therefore, they need 15 hours / 4 hours each day = <<15/4=3.75>>3.75 days.
+Since they cannot study for a fraction of a day, they will need to plan to study 4 days to allow for all the time they need.
+    The answer is 4
+    (2)question:Mark's basketball team scores 25 2 pointers, 8 3 pointers and 10 free throws.  Their opponents score double the 2 pointers but half the 3 pointers and free throws.  What's the total number of points scored by both teams added together?
+    Hint:- Mark's team scores 25 2 pointers, 8 3 pointers, and 10 free throws.\n- Opponents score double the 2 pointers, half the 3 pointers, and half the free throws.
+    core_question:What is the total number of points scored by Mark's basketball team and their opponents combined?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nMark's team scores 25 2 pointers, meaning they scored 25*2= <<25*2=50>>50 points in 2 pointers.
+His team also scores 8 3 pointers, meaning they scored 8*3= <<8*3=24>>24 points in 3 pointers.
+They scored 10 free throws, and free throws count as one point so they scored 10*1= <<10*1=10>>10 points in free throws.
+All together his team scored 50+24+10= <<50+24+10=84>>84 points.
+Mark's opponents scored double his team's number of 2 pointers, meaning they scored 25*2= <<25*2=50>>50 2 pointers.
+Each 2 pointer is worth 2 points, so they scored 50*2= <<50*2=100>>100 points in 2 pointers.
+His opponents scored half his team's number of 3 pointers, meaning they scored 8/2= <<8/2=4>>4 3 pointers.
+Each 3 pointer is worth 3 points, so they scored 4*3= <<4*3=12>>12 points in 3 pointers.
+They also scored half Mark's team's points in free throws, meaning they scored 10/2= <<10/2=5>>5 free throws.
+Each free throw is worth 1 point, so they scored 5*1= <<5*1=5>>5 points in free throws.
+All together Mark's opponents scored 100+12+5= <<100+12+5=117>>117 points.
+The total score for the game is both team's scores added together, so it is 84+117= <<84+117=201>>201 points.
+The answer is 201
+    (3)question:Bella has two times as many marbles as frisbees. She also has 20 more frisbees than deck cards. If she buys 2/5 times more of each item, what would be the total number of the items she will have if she currently has 60 marbles?
+    Hint:1. Bella currently has 60 marbles.\n2. Bella has two times as many marbles as frisbees.\n3. Bella has 20 more frisbees than deck cards.\n4. Bella will buy 2/5 times more of each item.
+    core_question:What would be the total number of marbles, frisbees, and deck cards Bella will have if she currently has 60 marbles and buys 2/5 times more of each item?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nBella currently has 60 marbles.
+She has two times as many marbles as frisbees, so she has 60 / 2 = <<60/2=30>>30 frisbees.
+Bella has 20 more frisbees than deck cards, so she has 30 - 20 = <<30-20=10>>10 deck cards.
+
+Bella buys 2/5 times more marbles, so she buys 2/5 * 60 = <<2/5*60=24>>24 more marbles.
+The total number of marbles she will have is 60 + 24 = <<60+24=84>>84 marbles.
+
+Bella buys 2/5 times more frisbees, so she buys 2/5 * 30 = <<2/5*30=12>>12 more frisbees.
+The total number of frisbees she will have is 30 + 12 = <<30+12=42>>42 frisbees.
+
+Bella buys 2/5 times more deck cards, so she buys 2/5 * 10 = <<2/5*10=4>>4 more deck cards.
+The total number of deck cards she will have is 10 + 4 = <<10+4=14>>14 deck cards.
+
+The total number of items Bella will have is 84 marbles + 42 frisbees + 14 deck cards = <<84+42+14=140>>140 items.
+The answer is 140
+    (4)question:A group of 4 fruit baskets contains 9 apples, 15 oranges, and 14 bananas in the first three baskets and 2 less of each fruit in the fourth basket. How many fruits are there?
+    Hint:- 4 fruit baskets\n- 9 apples, 15 oranges, and 14 bananas in the first three baskets\n- 2 less of each fruit in the fourth basket
+    core_question:How many fruits are there in total in the four fruit baskets?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, let's calculate the total number of fruits in the first three baskets.
+Each of the first three baskets contains 9 apples, 15 oranges, and 14 bananas.
+The total number of fruits in one basket is 9 apples + 15 oranges + 14 bananas = <<9+15+14=38>>38 fruits.
+Since there are three such baskets, the total number of fruits in the first three baskets is 3 baskets * 38 fruits/basket = <<3*38=114>>114 fruits.
+
+Next, let's calculate the number of fruits in the fourth basket.
+The fourth basket contains 2 less of each fruit compared to the first three baskets.
+So, the number of apples in the fourth basket is 9 apples - 2 apples = <<9-2=7>>7 apples.
+The number of oranges in the fourth basket is 15 oranges - 2 oranges = <<15-2=13>>13 oranges.
+The number of bananas in the fourth basket is 14 bananas - 2 bananas = <<14-2=12>>12 bananas.
+The total number of fruits in the fourth basket is 7 apples + 13 oranges + 12 bananas = <<7+13+12=32>>32 fruits.
+
+Finally, let's calculate the total number of fruits in all four baskets.
+The total number of fruits in all four baskets is 114 fruits (first three baskets) + 32 fruits (fourth basket) = <<114+32=146>>146 fruits.
+The answer is 146
+    (5)question:You can buy 4 apples or 1 watermelon for the same price. You bought 36 fruits evenly split between oranges, apples and watermelons, and the price of 1 orange is $0.50. How much does 1 apple cost if your total bill was $66?
+    Hint:'- You can buy 4 apples or 1 watermelon for the same price\n- You bought 36 fruits evenly split between oranges, apples, and watermelons\n- The price of 1 orange is $0.50\n- The total bill was $66'
+    core_question:How much does 1 apple cost if your total bill was $66?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nIf 36 fruits were evenly split between 3 types of fruits, then I bought 36/3 = <<36/3=12>>12 units of each fruit.
+
+If 1 orange costs $0.50, then 12 oranges will cost $0.50 * 12 = $<<0.5*12=6>>6.
+
+If my total bill was $66 and I spent $6 on oranges, then I spent $66 - $6 = $<<66-6=60>>60 on the other 2 fruit types.
+
+Assuming the price of a watermelon is W, and knowing that you can buy 4 apples for the same price, then the price of one apple is A, and 1W = 4A.
+
+If we know we bought 12 watermelons and 12 apples for $60, then we know that $60 = 12W + 12A.
+
+Knowing that 1W = 4A, we can substitute W with 4A in the equation: $60 = 12(4A) + 12A.
+
+Simplifying, we get $60 = 48A + 12A.
+
+Combining like terms, we get $60 = 60A.
+
+Solving for A, we get A = $60 / 60 = $<<60/60=1>>1.
+
+Therefore, the price of one apple is $1.
+The answer is 1
+    (6)question:Susy goes to a large school with 800 students, while Sarah goes to a smaller school with only 300 students.  At the start of the school year, Susy had 100 social media followers.  She gained 40 new followers in the first week of the school year, half that in the second week, and half of that in the third week.  Sarah only had 50 social media followers at the start of the year, but she gained 90 new followers the first week, a third of that in the second week, and a third of that in the third week.  After three weeks, how many social media followers did the girl with the most total followers have?
+    Hint:'1. Susy goes to a large school with 800 students.\n2. Sarah goes to a smaller school with only 300 students.\n3. Susy had 100 social media followers at the start of the school year.\n4. Susy gained 40 new followers in the first week, half that in the second week, and half of that in the third week.\n5. Sarah had 50 social media followers at the start of the year.\n6. Sarah gained 90 new followers the first week, a third of that in the second week, and a third of that in the third week.
+    core_question:After three weeks, how many social media followers did the girl with the most total followers have?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nSusy starts with 100 followers.
+In the first week, Susy gains 40 new followers.
+So, after the first week, Susy has 100 + 40 = <<100+40=140>>140 followers.
+In the second week, Susy gains half of 40 new followers, which is 40 / 2 = <<40/2=20>>20 new followers.
+So, after the second week, Susy has 140 + 20 = <<140+20=160>>160 followers.
+In the third week, Susy gains half of 20 new followers, which is 20 / 2 = <<20/2=10>>10 new followers.
+So, after the third week, Susy has 160 + 10 = <<160+10=170>>170 followers.
+
+Sarah starts with 50 followers.
+In the first week, Sarah gains 90 new followers.
+So, after the first week, Sarah has 50 + 90 = <<50+90=140>>140 followers.
+In the second week, Sarah gains a third of 90 new followers, which is 90 / 3 = <<90/3=30>>30 new followers.
+So, after the second week, Sarah has 140 + 30 = <<140+30=170>>170 followers.
+In the third week, Sarah gains a third of 30 new followers, which is 30 / 3 = <<30/3=10>>10 new followers.
+So, after the third week, Sarah has 170 + 10 = <<170+10=180>>180 followers.
+
+Therefore, Sarah is the girl with the most total followers with a total of 180.
+The answer is 180
+    (7)question:Sam bought a dozen boxes, each with 30 highlighter pens inside, for $10 each box. He rearranged five of these boxes into packages of six highlighters each and sold them for $3 per package. He sold the rest of the highlighters separately at the rate of three pens for $2. How much profit did he make in total, in dollars?
+    Hint:1. Sam bought a dozen boxes of highlighter pens for $10 each.\n2. Each box contained 30 highlighter pens.\n3. Sam rearranged five boxes into packages of six highlighters each.\n4. He sold these packages for $3 each.\n5. The remaining highlighters were sold individually at a rate of three pens for $2.\n\nNow, let's calculate the total profit Sam made. \n\nTotal cost of buying a dozen boxes = 12 boxes * $10 = $120\nTotal revenue from selling packages = 5 boxes * 5 packages per box * $3 = $75\nTotal revenue from selling individual highlighters = (12 boxes - 5 boxes) * 30 pens per box * $2 / 3 pens = $80\n\nTotal revenue = $75 + $80 = $155\nTotal cost = $120\nTotal profit = Total revenue - Total cost = $155 - $120 = $35\n\nTherefore, Sam made a total profit of $35.
+    core_question:How much profit did Sam make in total after buying a dozen boxes of highlighter pens for $10 each, rearranging five boxes into packages of six highlighters sold for $3 each, and selling the rest individually at a rate of three pens for $2?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nSam bought 12 boxes x $10 = $<<12*10=120>>120 worth of highlighters.
+He bought 12 * 30 = <<12*30=360>>360 highlighters in total.
+
+Sam then took 5 boxes x 30 highlighters/box = <<5*30=150>>150 highlighters.
+He rearranged these 150 highlighters into packages of 6 highlighters each.
+The number of packages he made is 150 / 6 = <<150/6=25>>25 packages.
+He sold each package for $3, so he made 25 * $3 = $<<25*3=75>>75 from these packages.
+
+After selling these 5 boxes, there were 360 - 150 = <<360-150=210>>210 highlighters remaining.
+These remaining highlighters were sold in groups of 3 pens each.
+The number of groups he made is 210 / 3 = <<210/3=70>>70 groups.
+He sold each group for $2, so he made 70 * $2 = $<<70*2=140>>140 from these groups.
+
+In total, he earned $75 + $140 = $<<75+140=215>>215.
+Since his original cost was $120, he earned $215 - $120 = $<<215-120=95>>95 in profit.
+The answer is 95
+    (8)question:In a certain school, 2/3 of the male students like to play basketball, but only 1/5 of the female students like to play basketball. What percent of the population of the school do not like to play basketball if the ratio of the male to female students is 3:2 and there are 1000 students?
+    Hint:1. 2/3 of male students like to play basketball\n2. 1/5 of female students like to play basketball\n3. Ratio of male to female students is 3:2\n4. Total number of students is 1000.
+    core_question:What percent of the population of the school do not like to play basketball if the ratio of the male to female students is 3:2 and there are 1000 students?'
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nThe students are divided into 3 + 2 = <<3+2=5>>5 parts where 3 parts are for males and 2 parts are for females.
+Each part represents 1000/5 = <<1000/5=200>>200 students.
+So, there are 3 x 200 = <<3*200=600>>600 males.
+And there are 2 x 200 = <<2*200=400>>400 females.
+
+Next, we calculate the number of male students who like to play basketball. Since 2/3 of the male students like to play basketball, we have 600 x 2/3 = <<600*2/3=400>>400 males who like to play basketball.
+
+Now, we calculate the number of female students who like to play basketball. Since 1/5 of the female students like to play basketball, we have 400 x 1/5 = <<400*1/5=80>>80 females who like to play basketball.
+
+Adding the number of males and females who like to play basketball, we get 400 + 80 = <<400+80=480>>480 students who like to play basketball.
+
+To find the number of students who do not like to play basketball, we subtract the number of students who like to play basketball from the total number of students: 1000 - 480 = <<1000-480=520>>520 students who do not like to play basketball.
+
+Finally, we calculate the percentage of students who do not like to play basketball: (520/1000) * 100 = <<520/1000*100=52>>52%.
+The answer is 52

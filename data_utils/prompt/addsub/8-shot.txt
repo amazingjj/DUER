@@ -1,0 +1,95 @@
+(1)question:Joan joined her school 's band . She bought a trumpet for $ 149.16 , a music tool for $ 9.98 , and a song book which was $ 4.14 . Joan found $ 8.65 in her pocket . How much did Joan spend at the music store ? 
+Hint:1. Trumpet cost: $149.16\n2. Music tool cost: $9.98\n3. Song book cost: $4.14
+core_question:How much did Joan spend at the music store?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Joan bought a trumpet for $149.16.
+2. She also bought a music tool for $9.98.
+3. Additionally, she bought a song book for $4.14.
+4. First, add the cost of the trumpet and the music tool: $149.16 + $9.98 = $159.14.
+5. Next, add the cost of the song book to the previous total: $159.14 + $4.14 = $163.28.
+6. Therefore, the total amount Joan spent at the music store is $163.28.
+The answer is 163.28
+(2)question:On her vacation last summer , Trisha walked all over New York City to buy souvenirs . First , she walked 0.1111111111111111 mile from her hotel to a postcard shop . Then she walked 0.1111111111111111 mile from the postcard shop to a T-shirt shop and 0.6666666666666666 mile from the T-shirt shop back to the hotel . How many miles did Trisha walk in all ? 
+Hint:1. Trisha walked 0.1111111111111111 mile from her hotel to a postcard shop.\n2. She walked another 0.1111111111111111 mile from the postcard shop to a T-shirt shop.\n3. She walked 0.6666666666666666 mile from the T-shirt shop back to the hotel.
+core_question:How many miles did Trisha walk in total during her trip to buy souvenirs in New York City?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Trisha walked 0.1111111111111111 mile from her hotel to a postcard shop.
+2. Then she walked 0.1111111111111111 mile from the postcard shop to a T-shirt shop.
+3. Finally, she walked 0.6666666666666666 mile from the T-shirt shop back to the hotel.
+4. First, add the distance from the hotel to the postcard shop and the distance from the postcard shop to the T-shirt shop: 0.1111111111111111 + 0.1111111111111111 = 0.2222222222222222 miles.
+5. Next, add the distance from the T-shirt shop back to the hotel to the previous total: 0.2222222222222222 + 0.6666666666666666 = 0.8888888888888888 miles.
+6. Therefore, the total distance Trisha walked is 0.8888888888888888 miles.
+The answer is 0.8888888888888888
+(3)question:Nina did a running drill to get in shape for soccer season . First , Nina ran 0.08333333333333333 mile . Then she ran 0.08333333333333333 mile and 0.6666666666666666 mile . How many miles did Nina run in total ? 
+Hint:1. Nina first ran 0.08333333333333333 mile.\n2. Then, she ran another 0.08333333333333333 mile.\n3. Additionally, she ran 0.6666666666666666 mile.
+core_question:How many miles did Nina run in total during her running drill?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Nina ran 0.08333333333333333 mile initially.
+2. Then she ran another 0.08333333333333333 mile.
+3. To find the total distance for the first two runs, add 0.08333333333333333 + 0.08333333333333333 = 0.16666666666666666 miles.
+4. Finally, she ran 0.6666666666666666 mile.
+5. To find the total distance, add the previous total to the last run: 0.16666666666666666 + 0.6666666666666666 = 0.8333333333333334 miles.
+The answer is 0.8333333333333334
+(4)question:Heather went to the county fair last weekend . When she got there , she had to walk 0.3333333333333333 mile from the car to the entrance . Then she walked 0.3333333333333333 mile to the carnival rides and 0.08333333333333333 mile from the carnival rides back to the car . How many miles did Heather walk in all ? 
+Hint:1. Heather walked 0.3333333333333333 mile from the car to the entrance.\n2. Heather walked 0.3333333333333333 mile from the entrance to the carnival rides.\n3. Heather walked 0.08333333333333333 mile from the carnival rides back to the car.
+core_question:How many miles did Heather walk in total during her visit to the county fair, including her walks from the car to the entrance, from the entrance to the carnival rides, and from the carnival rides back to the car?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Heather walked 0.3333333333333333 mile from the car to the entrance.
+2. Then she walked 0.3333333333333333 mile to the carnival rides.
+3. Finally, she walked 0.08333333333333333 mile from the carnival rides back to the car.
+4. First, add the distance from the car to the entrance and the distance to the carnival rides: 0.3333333333333333 + 0.3333333333333333 = 0.6666666666666666 miles.
+5. Next, add the distance from the carnival rides back to the car to the previous total: 0.6666666666666666 + 0.08333333333333333 = 0.75 miles.
+6. Therefore, the total distance Heather walked is 0.75 miles.
+The answer is 0.75
+(5)question:Before starting her shift , a waitress checks to make sure there is enough mustard for her customers . She finds 0.25 bottle at the first table , 0.25 bottle at the second table , and 0.375 bottle at the third table . Altogether , how many bottles of mustard does the waitress find ? 
+Hint:1. First table: 0.25 bottle of mustard.\n2. Second table: 0.25 bottle of mustard.\n3. Third table: 0.375 bottle of mustard.
+core_question:How many bottles of mustard does the waitress find in total after checking the first, second, and third tables?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. The waitress finds 0.25 bottle of mustard at the first table.
+2. She finds another 0.25 bottle at the second table.
+3. She finds 0.375 bottle at the third table.
+4. First, add the amount of mustard found at the first table and the second table: 0.25 + 0.25 = 0.5 bottles.
+5. Next, add the amount of mustard found at the third table to the previous total: 0.5 + 0.375 = 0.875 bottles.
+6. Therefore, the total number of bottles of mustard is 0.875 bottles.
+The answer is 0.875
+(6)question:A waitress put leftover tarts into the fridge on Thursday night . She noticed that the restaurant had 0.08333333333333333 tart filled with cherries , 0.75 tart filled with blueberries , and 0.08333333333333333 tart filled with peaches . How many leftover tarts did the restaurant have in all ? 
+Hint:1. 0.08333333333333333 tart filled with cherries.\n2. 0.75 tart filled with blueberries.\n3. 0.08333333333333333 tart filled with peaches.
+core_question:How many leftover tarts did the restaurant have in total?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. The restaurant had 0.08333333333333333 tart filled with cherries.
+2. It had 0.75 tart filled with blueberries.
+3. It had 0.08333333333333333 tart filled with peaches.
+4. First, add the amount of tart filled with cherries and the amount of tart filled with blueberries: 0.08333333333333333 + 0.75 = 0.8333333333333333 tarts.
+5. Next, add the amount of tart filled with peaches to the previous total: 0.8333333333333333 + 0.08333333333333333 = 0.9166666666666666 tarts.
+6. Therefore, the total number of leftover tarts is 0.9166666666666666 tarts.
+The answer is 0.9166666666666666
+(7)question:Brandy made trail mix for a backpacking trip . She used 0.16666666666666666 pound of peanuts , 0.16666666666666666 pound of chocolate chips , and 0.08333333333333333 pound of raisins . How many pounds of trail mix did Brandy make ? 
+Hint:1. Brandy used 0.16666666666666666 pound of peanuts.\n2. Brandy used 0.16666666666666666 pound of chocolate chips.\n3. Brandy used 0.08333333333333333 pound of raisins.
+core_question:How many pounds of trail mix did Brandy make using 0.16666666666666666 pound of peanuts, 0.16666666666666666 pound of chocolate chips, and 0.08333333333333333 pound of raisins?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Brandy used 0.16666666666666666 pound of peanuts.
+2. She used 0.16666666666666666 pound of chocolate chips.
+3. She used 0.08333333333333333 pound of raisins.
+4. First, add the weight of the peanuts and the chocolate chips: 0.16666666666666666 + 0.16666666666666666 = 0.3333333333333333 pounds.
+5. Next, add the weight of the raisins to the previous total: 0.3333333333333333 + 0.08333333333333333 = 0.4166666666666667 pounds.
+6. Therefore, the total weight of the trail mix is 0.4166666666666667 pounds.
+The answer is 0.4166666666666667
+(8)question:Allie counted the leftover ice cream after a sundae party . She had 0.3333333333333333 carton of rocky road ice cream , 0.3333333333333333 carton of cookie dough ice cream , and 0.16666666666666666 carton of strawberry cheesecake ice cream . How many cartons of ice cream did Allie have in all ? 
+Hint:1. Allie had 0.3333333333333333 carton of rocky road ice cream.\n2. Allie had 0.3333333333333333 carton of cookie dough ice cream.\n3. Allie had 0.16666666666666666 carton of strawberry cheesecake ice cream.
+core_question:How many cartons of ice cream did Allie have in total after adding up the leftovers of rocky road, cookie dough, and strawberry cheesecake ice creams?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Allie had 0.3333333333333333 carton of rocky road ice cream.
+2. She had 0.3333333333333333 carton of cookie dough ice cream.
+3. She had 0.16666666666666666 carton of strawberry cheesecake ice cream.
+4. First, add the amount of rocky road ice cream and cookie dough ice cream: 0.3333333333333333 + 0.3333333333333333 = 0.6666666666666666 cartons.
+5. Next, add the amount of strawberry cheesecake ice cream to the previous total: 0.6666666666666666 + 0.16666666666666666 = 0.8333333333333333 cartons.
+6. Therefore, the total number of cartons of ice cream is 0.8333333333333333 cartons.
+The answer is 0.8333333333333333

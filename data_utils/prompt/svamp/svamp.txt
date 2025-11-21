@@ -1,0 +1,102 @@
+(1)question:After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet. How deep was the water?
+Hint:1. Ron's height is 13 feet.\n2. Dean is 4 feet taller than Ron.\n3. The depth of the water is 15 times Dean's height.
+core_question:How deep was the water where they decided to swim, given that the depth is 15 times Dean's height, Dean is 4 feet taller than Ron, and Ron's height is 13 feet?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Ron's height is 13 feet.
+2. Dean is 4 feet taller than Ron.
+3. Therefore, Dean's height is 13 + 4 = 17 feet.
+4. The depth of the water is 15 times Dean's height.
+5. To find the depth of the water, we multiply Dean's height by 15.
+6. Therefore, the depth of the water is 15 * 17 = 255 feet.
+The answer is 255
+(2)question:Tiffany was collecting cans for recycling. On monday she had 4 bags of cans. The next day she found some more bags worth of cans. If she had a total of 6 bags altogether. How many bags did she find on the next day?
+Hint:1. Tiffany initially had 4 bags of cans on Monday.\n2. She had a total of 6 bags after finding more on the next day.\n3. The question asks how many bags she found on the day after Monday.
+core_question:How many bags of cans did Tiffany find on the day after Monday?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Tiffany had 4 bags of cans on Monday.
+2. She found some more bags worth of cans the next day.
+3. The total number of bags she had after finding more bags is 6.
+4. To find out how many bags she found the next day, we need to subtract the number of bags she had on Monday from the total number of bags.
+5. Therefore, the number of bags she found the next day is 6 - 4.
+6. Performing the subtraction, we get 6 - 4 = 2.
+The answer is 2
+(3)question:The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus. How many buses are needed to take the trip?
+Hint:1. There are 87 classrooms in the school.\n2. Each classroom has 58 students.\n3. Each bus has 2 seats.
+core_question:How many buses are needed to transport all the students for a field trip if there are 58 students in each of the 87 classrooms and each bus has 2 seats?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. There are 58 students in the school.
+2. Each school bus has 2 seats.
+3. To find out how many buses are needed, we need to divide the total number of students by the number of seats on each bus.
+4. Therefore, the number of buses needed is 58 / 2.
+5. Performing the division, we get 58 / 2 = 29.
+The answer is 29
+(4)question:After eating a hearty meal they went to see the Buckingham palace. There were 71 paintings in the Buckingham palace. There, Rachel learned that 557 visitors came to the Buckingham palace that day. If there were 188 visitors the previous day. How many visited the Buckingham palace within 57 days?
+Hint:1. Number of visitors on one specific day: 557\n2. Number of visitors on the previous day: 188\n3. Total number of days considered: 57 days\n\nThese are the key pieces of information needed to estimate the number of visitors to Buckingham Palace over 57 days.
+core_question:How many visitors visited the Buckingham Palace over a period of 57 days, given that 557 visitors came on one day and 188 visitors came on the previous day?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. There were 557 visitors that day.
+2. There were 188 visitors the previous day.
+3. To find the number of more visitors that day than the previous day, we subtract the number of visitors the previous day from the number of visitors that day.
+4. Therefore, the number of more visitors that day than the previous day is 557 - 188.
+5. Performing the subtraction, we get 557 - 188 = 369.
+6. To find the number of visitors within 57 days, we multiply the number of more visitors by 57.
+7. Therefore, the number of visitors within 57 days is 369 * 57.
+8. Performing the multiplication, we get 369 * 57 = 21033.
+The answer is 21033
+(5)question:Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more pounds of strawberries. Marco's strawberries now weighed 36 pounds. How much did his dad's strawberries weigh now?
+Hint:1. Marco and his dad initially collected a total of 22 pounds of strawberries.\n2. Marco's dad found an additional 30 pounds of strawberries on the way back.\n3. Marco's total strawberries weighed 36 pounds after his dad found more strawberries.\n4. The total weight of strawberries after finding the additional 30 pounds is 22 pounds + 30 pounds = 52 pounds.\n5. Marco's dad's strawberries now weigh 52 pounds - 36 pounds = 16 pounds.
+core_question:How much did Marco's dad's strawberries weigh after finding 30 more pounds on the way back?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Together they collected 22 pounds of strawberries.
+2. Marco's strawberries now weigh 36 pounds.
+3. To find out how much Marco's dad's strawberries initially weighed, we subtract Marco's strawberries from the total weight.
+4. Therefore, Marco's dad's strawberries initially weighed 22 - 36 = -14 pounds.
+5. Marco's dad found 30 more pounds of strawberries.
+6. To find out how much Marco's dad's strawberries weigh now, we add the additional strawberries to the initial weight.
+7. Therefore, Marco's dad's strawberries now weigh -14 + 30 = 16 pounds.
+The answer is 16
+(6)question:Frank was reading through his favorite book. The book had 41 chapters, each with the same number of pages. It has a total of 450 pages. It took Frank 30 days to finish the book. How many pages did he read per day?
+Hint:1. Total number of pages in the book: 450 pages.\n2. Total number of days Frank took to finish the book: 30 days.
+core_question:How many pages did Frank read per day to finish a 450-page book in 30 days?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. The book has a total of 450 pages.
+2. Frank took 30 days to finish the book.
+3. To find out how many pages he read per day, we need to divide the total number of pages by the number of days.
+4. Therefore, the number of pages he read per day is 450 divided by 30.
+5. Performing the division, we get 450 / 30 = 15.
+6. Therefore, Frank read 15 pages per day.
+The answer is 15
+(7)question:Mary is baking a cake. The recipe calls for 3 cups of sugar and 10 cups of flour. She already put in some cups of flour. If she still needs 5 more cups of flour than sugar. How many cups of flour did she put in?
+Hint:1. The recipe requires 3 cups of sugar.\n2. The recipe requires 10 cups of flour.\n3. Mary still needs 5 more cups of flour than sugar.
+core_question:How many cups of flour did Mary already put in if she still needs 5 more cups of flour than sugar?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. The recipe calls for 10 cups of flour.
+2. Mary still needs some cups of flour.
+3. She needs 5 more cups of flour than sugar.
+4. The recipe calls for 3 cups of sugar.
+5. Therefore, she needs 3 + 5 = 8 cups of flour.
+6. To find out how many cups of flour she has already put in, we subtract the cups of flour she still needs from the total cups of flour required.
+7. Therefore, she has already put in 10 - 8 = 2 cups of flour.
+The answer is 2
+(8)question:Robin has some packages of gum. There are 7 pieces in each package. Robin has 6 extra pieces of gum. In all the number of pieces of gums robin has is 41. How many packages does Robin have?
+Hint:1. Each package contains 7 pieces of gum.\n2. Robin has 6 extra pieces of gum.\n3. The total number of pieces of gum Robin has is 41.
+core_question:How many packages of gum does Robin have if each package contains 7 pieces, she has 6 extra pieces, and in total she has 41 pieces of gum?
+Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+response：Let's think step by step
+1. Robin has 41 pieces of gum in total.
+2. She has 6 extra pieces of gum.
+3. To find the number of pieces of gum in packages, we subtract the extra pieces from the total number of pieces.
+4. Therefore, the number of pieces of gum in packages is 41 - 6.
+5. Performing the subtraction, we get 41 - 6 = 35.
+6. Each package has 7 pieces of gum.
+7. To find the number of packages, we divide the number of pieces of gum in packages by the number of pieces in each package.
+8. Therefore, the number of packages Robin has is 35 / 7.
+9. Performing the division, we get 35 / 7 = 5.
+The answer is 5

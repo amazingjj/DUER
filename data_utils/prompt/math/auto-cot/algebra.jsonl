@@ -1,0 +1,30 @@
+[
+    {
+        "problem": "Calculate the sum of the geometric series $1+\\left(\\frac{1}{3}\\right)+\\left(\\frac{1}{3}\\right)^2 + \\left(\\frac{1}{3}\\right)^3 + \\dots$. Express your answer as a common fraction.",
+        "level": "Level 4",
+        "type": "Algebra",
+        "solution": "This is an infinite geometric series with first term $a=1$ and common ratio $r=\\frac{1}{3}$. Thus the sum is: $$\\frac{a}{1-r} = \\frac{1}{1-\\frac13} = \\frac{1}{\\frac{2}{3}}=\\boxed{\\frac{3}{2}}.$$",
+        "answer": "\\frac{3}{2}"
+    },
+    {
+        "problem": "It takes 15 men working steadily 4 days to dig the foundation for a new apartment.  How many days would it have taken 25 men working at the same rate to dig the foundation?  Express your answer as a decimal to the nearest tenth.",
+        "level": "Level 2",
+        "type": "Algebra",
+        "solution": "The number of men and the amount of time to dig the foundation are inversely proportional.  Let $m$ equal the number of men and $d$ equal the number of days to complete the foundation.  This implies that $md=k$ for some constant $k$.  From the given information, $15\\cdot 4=60=k$.  Knowing the value of $k$ we can solve for the number of days it would have have taken 25 men to dig the foundation: \\begin{align*}\n25\\cdot d&=60\\\\\n\\Rightarrow\\qquad d&=60/25=12/5=\\boxed{2.4}\n\\end{align*}",
+        "answer": "2.4"
+    },
+    {
+        "problem": "The two lines $y = 4x - 19$ and $2x+y = 95$ intersect. What is the value of $x$ at the point of intersection?",
+        "level": "Level 3",
+        "type": "Algebra",
+        "solution": "At the intersection of two lines, the $x$'s are equal and the $y$'s are equal. We may set $4x - 19 = 95 - 2x$ to find an $x$, where the $y$'s are equal.\n\n\\begin{align*}\n4x - 19 &= 95 - 2x \\\\\n6x &= 114 \\\\\nx &= \\boxed{19}.\n\\end{align*}",
+        "answer": "19"
+    },
+    {
+        "problem": "Lulu has a quadratic of the form $x^2+bx+44$, where $b$ is a specific positive number. Using her knowledge of how to complete the square, Lulu is able to rewrite this quadratic in the form $(x+m)^2+8$. What is $b$?",
+        "level": "Level 3",
+        "type": "Algebra",
+        "solution": "The expansion of $(x+m)^2+8$ is $x^2+2mx+m^2+8$, which has a constant term of $m^2+8$. This constant term must be equal to the constant term of the original quadratic, so $m^2+8 = 44$, which yields the possibilities $m=6$ and $m=-6$.\n\nIf $m=6$, then $(x+m)^2+8 = x^2+12x+44$. If $m=-6$, then $(x+m)^2+8 = x^2-12x+44$. Of these two possibilities, only the first conforms to our information that $b$ was a positive number. So, the original quadratic was $x^2+12x+44$, giving $b=\\boxed{12}$.",
+        "answer": "12"
+    }
+]

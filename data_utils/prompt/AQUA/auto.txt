@@ -1,0 +1,39 @@
+Q: Julie's yard is rectangular. One side of the yard is 100 feet wide. The total area of the yard is 3,000 square feet. What is the length of the other side of the yard? Answer Choices: (A) 30 feet (B) 20 feet (C) 10 feet (D) 50 feet (E) 60 feet
+A: Let's think step by step. We know that the yard is rectangular, so it has four sides. We also know that one side of the yard is 100 feet wide. The total area of the yard is 3,000 square feet. We can set up the equation: 3,000 = 100x x = 30 So, the length of the other side of the yard is 30 feet. The answer is A.
+
+Q: In a bag of red and green sweets, the ratio of red sweets to green sweets is 3:4. If the bag contains 120 green sweets, how many red sweets are there? Answer Choices: (A) 90 (B) 80 (C) 95 (D) 100 (E) 85
+A: Let's think step by step. There are 3 red sweets for every 4 green sweets. That means that for every 12 sweets, there are 9 red sweets. That means that for every 120 green sweets, there are 90 red sweets. The answer is (A). The answer is A
+
+Q: A car finishes a journey in 20 hours at the speed of 60 km/hr. If the same distance is to be covered in 10 hours, how much speed does the car gain? Answer Choices: (A) 80 kmph (B) 50 kmph (C) 120 kmph (D) 70 kmph (E) 80 kmph
+A: Let's think step by step. The car is currently travelling at 60 km/hr. In order to travel the same distance in 10 hours, the car would need to travel at 6 times the speed, or 360 km/hr. Therefore, the car would need to gain 300 km/hr. The answer is C. The answer is C.
+
+Q: Mark told John "If you give me half your money I will have Rs.75. John said, "if you give me one third of your money, I will have Rs.75/-. How much money did John have ? Answer Choices: (A) 22 (B) 60 (C) 28 (D) 26 (E) 18
+A: Let's think step by step. If Mark has Rs.75, then John has Rs.75 as well. If Mark gives John half his money, then Mark will have Rs.37.50 and John will have Rs.112.50. However, this isn't one of the answer choices. If Mark gives John one third of his money, then Mark will have Rs.50 and John wil have Rs.100. This is one of the answer choices, so John must have had Rs.100 to begin with. The answer is D.
+
+Q:
+
+Q: There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?
+A: There are 15 trees originally. Then there were 21 trees after some more were planted. So there must have been 21 - 15 = 6. The answer is 6.
+
+Q: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?
+A: There are originally 3 cars. 2 more cars arrive. 3 + 2 = 5. The answer is 5
+
+Q: Leah had 32 chocolates and her sister had 42. If they ate 35, how many pieces do they have left in total?
+A: Originally, Leah had 32 chocolates. Her sister had 42. So in total they had 32 + 42 = 74. After eating 35, they had 74 - 35 = 39. The answer is 39.
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+A: Jason started with 20 lollipops. Then he had 12 after giving some to Denny. So he gave Denny 20 - 12 = 8. The answer is 8.
+
+Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
+A: Shawn started with 5 toys. If he got 2 toys each from his mom and dad, then that is 4 more toys. 5 + 4 = 9. The answer is 9.
+
+Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+A: There were originally 9 computers. For each of 4 days, 5 more computers were added. So 5 * 4 = 20 computers were added. 9 + 20 is 29. The answer is 29.
+
+Q: Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: Michael started with 58 golf balls. After losing 23 on tuesday, he had 58 - 23 = 35. After losing 2 more, he had 35 - 2 = 33 golf balls. The answer is 33.
+
+Q: Olivia has $23. She bought five bagels for $3 each. How much money does she have left?
+A: Olivia had 23 dollars. 5 bagels for 3 dollars each will be 5 x 3 = 15 dollars. So she has 23 - 15 dollars left. 23 - 15 is 8. The answer is 8.
+
+Q:

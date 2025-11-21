@@ -1,0 +1,4 @@
+14righttriangles
+19
+A,B,E
+11

@@ -1,0 +1,5 @@
+'How much do you have to pay to buy each pack of DVDs after a discount of 25 dollars on each pack?'
+'How much did Dan spend on the candy bar?'
+'How many salty cookies did Paco have left after eating 9 of them?'
+'How many children got off the bus at the bus stop?'
+'How many more children got on the bus than those that got off?'

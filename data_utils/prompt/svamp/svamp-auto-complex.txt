@@ -1,0 +1,52 @@
+{
+    "demo": [
+        {
+            "question": "Q: There were 7 roses and 12 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 11 roses and 20 orchids in the vase. How many more orchids than roses are there in the vase now?\nA:",
+            "rationale": "Let's think step by step. There were 7 roses and 12 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. Now, there are 11 roses and 20 orchids in the vase. To find out how many more orchids than roses are there, we first need to compare the number of roses and orchids. We see that there are 11 roses and 20 orchids. Next, we subtract the number of roses from the number of orchids: 20 - 11. This gives us 9. So, there are 9 more orchids than roses in the vase now.",
+            "pred_ans": "9",
+            "gold_ans": "9"
+        },
+        {
+            "question": "Q: He then went to see the oranges being harvested. He found out that they harvest 67 sacks per day and that each sack containes 12 oranges. How many oranges are harvested if they harvest a total of 35 sacks of oranges?\nA:",
+            "rationale": "Let's think step by step. He found out that they harvest 67 sacks per day. Each sack contains 12 oranges. To find out how many oranges are harvested per day, we multiply the number of sacks by the number of oranges per sack: 67 x 12. First, we calculate 60 x 12 = 720. Then, we calculate 7 x 12 = 84. Adding these two results together, we get 720 + 84 = 804 oranges per day. Now, if they harvest a total of 35 sacks of oranges, we need to multiply the number of sacks by the number of oranges per sack: 35 x 12. First, we calculate 30 x 12 = 360. Then, we calculate 5 x 12 = 60. Adding these two results together, we get 360 + 60 = 420 oranges. So, they would harvest 420 oranges if they harvest a total of 35 sacks of oranges.",
+            "pred_ans": "420",
+            "gold_ans": "420"
+        },
+        {
+            "question": "Q: 2 birds and 6 storks were sitting on the fence. 3 more birds came to join them. How many more storks than birds are sitting on the fence?\nA:",
+            "rationale": "Let's think step by step. There are 2 birds and 6 storks sitting on the fence. 3 more birds come to join them. First, we add the number of birds initially on the fence to the number of birds that joined: 2 + 3 = 5 birds. Next, we compare the number of storks and birds. There are 6 storks and 5 birds. To find out how many more storks than birds are sitting on the fence, we subtract the number of birds from the number of storks: 6 - 5 = 1. So, there is 1 more stork than bird sitting on the fence."
+            "pred_ans": "1",
+            "gold_ans": "1"
+        },
+        {
+            "question": "Q: Paul had 108 books and 55 pens. After selling some books and pens in a garage sale he had 66 books and 59 pens left. How many books did he sell in the garage sale?\nA:",
+            "rationale": "Let's think step by step. We know that Paul had 108 books and 55 pens before the garage sale. After the garage sale, he had 66 books and 59 pens. To find out how many books he sold, we need to subtract the number of books he has now from the number of books he had initially. First, we subtract the number of books: 108 - 66. We can break this down further: 108 - 60 = 48, and then 48 - 6 = 42. So, Paul sold 42 books. Similarly, to find out how many pens he sold, we subtract the number of pens he has now from the number of pens he had initially: 55 - 59. Since 59 is greater than 55, we can see that he actually gained 4 pens. Therefore, Paul sold 42 books in the garage sale.",
+            "pred_ans": "42",
+            "gold_ans": "42"
+        },
+        {
+            "question": "Q: In a school there are 632 girls and 410 boys. 465 more girls joined the school. How many more girls than boys does the school have?\nA:",
+            "rationale": "Let's think step by step. First, we know there are 632 girls and 410 boys in the school. Next, 465 more girls joined the school. To find the total number of girls, we add the initial number of girls to the number of girls who joined: 632 + 465. We can break this down further: 600 + 400 = 1000, 30 + 60 = 90, and 2 + 5 = 7. Adding these results together, we get 1000 + 90 + 7 = 1097 girls. Now, we need to find out how many more girls than boys there are. We subtract the number of boys from the total number of girls: 1097 - 410. We can break this down further: 1000 - 400 = 600, and 97 - 10 = 87. Adding these results together, we get 600 + 87 = 687. So, there are 687 more girls than boys in the school.",
+            "pred_ans": "687",
+            "gold_ans": "687"
+        },
+        {
+            "question": "Q: Ed had 6 more marbles than Doug. Doug lost 7 of his marbles at the playground. If Ed had 22 marbles How many marbles does Doug have now?\nA:",
+            "rationale": "Let's think step by step. Ed had 6 more marbles than Doug. To find out how many marbles Doug had initially, we subtract 6 from the number of marbles Ed had: 22 - 6. First, we subtract 6 from 22. We can break this down further: 22 - 2 = 20, and then 20 - 4 = 16. So, Doug had 16 marbles initially. Next, Doug lost 7 of his marbles at the playground. To find out how many marbles Doug has now, we subtract 7 from the number of marbles Doug had initially: 16 - 7. We can break this down further: 16 - 6 = 10, and then 10 - 1 = 9. So, Doug has 9 marbles now.",
+            "pred_ans": "9",
+            "gold_ans": "9"
+        }
+        {
+            "question": "Q: Baker sold 8 cakes. If he had made 40 cakes initially How many more cakes did baker make than those he sold?\nA:",
+            "rationale": "Let's think step by step. Baker made 40 cakes initially. He sold 8 cakes. To find out how many more cakes he made than those he sold, we need to subtract the number of cakes he sold from the number of cakes he made. First, we start with the total number of cakes Baker made: 40. Next, we consider the number of cakes he sold: 8. We need to subtract the number of cakes sold from the total number of cakes made. We can break this down further: 40 - 8. First, we subtract 0 from 8, which gives us 8. Then, we subtract 8 from 40, which gives us 32. So, Baker made 32 more cakes than those he sold.",
+            "pred_ans": "32",
+            "gold_ans": "32"
+        },
+        {
+            "question": "Q: Julia played tag with 16 kids on monday. If she played tag with 12 more kids on monday than on tuesday How many kids did she play with on tuesday?\nA:",
+            "rationale": "Let's think step by step. On Monday, Julia played with 16 kids. She played with 12 more kids on Monday than on Tuesday. This means the number of kids she played with on Tuesday is fewer than the number of kids on Monday. To find the number of kids she played with on Tuesday, we need to subtract the number of additional kids she played with on Monday from the total number of kids she played with on Monday. First, we start with the total number of kids she played with on Monday: 16. Next, we consider the number of additional kids she played with on Monday compared to Tuesday: 12. We need to subtract this number from the total number of kids she played with on Monday. We can break this down further: 16 - 12. First, we subtract 10 from 16, which gives us 6. Then, we subtract 2 from 6, which gives us 4. So, Julia played with 4 kids on Tuesday."
+            "pred_ans": "4",
+            "gold_ans": "4"
+        }
+    ]
+}

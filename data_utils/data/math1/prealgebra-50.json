@@ -1,0 +1,352 @@
+[
+    {
+        "problem": "What is the probability of spinning the spinner pictured and getting a prime number? Express your answer as a common fraction. [asy]\nimport olympiad; defaultpen(linewidth(0.8)); size(100); dotfactor=4;\ndraw(Circle((0,0),1));\nstring[] labels = {\"3\",\"6\",\"1\",\"4\",\"5\",\"2\"};\nfor(int i = 0; i < 6; ++i){\n\nlabel(labels[i],0.7*dir(60*i));\n\ndraw((0,0)--dir(60*i - 30));\n}\ndraw((0,0)--0.7*dir(130),linewidth(2.0),EndArrow(size=6));\n[/asy]",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "There are six possible numbers for the spinner to land on, three of which are prime (3, 2, and 5). Thus, the probability of spinning a prime number is $\\boxed{\\frac{1}{2}}$.",
+        "answer": "\\frac{1}{2}"
+    },
+    {
+        "problem": "The product of two inches and the circumference of a circle, in inches, is equal to the circle's area. What is the length of the radius of the circle, in inches?",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "Let $r$ be the radius of the circle. The given tells us that $2\\cdot2\\pi r=\\pi r^2$. Dividing by $\\pi r$, we have $r=\\boxed{4}$ inches.",
+        "answer": "4"
+    },
+    {
+        "problem": "What is the greatest integer less than 100 for which the greatest common divisor of that integer and 12 is 4?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "The prime factors of 12 are 2, 2, and 3. If the greatest common factor with 12 is 4, that means the other number is a multiple of 4 but not 6, 12. Since the other number must an even number (multiple of 2), we start with 98 and look at decreasing even numbers. 98 is not a multiple of 4. 96 is a multiple of 6 and 12. 94 is not a multiple of 4. So, the greatest integer less than 100 that satisfies the conditions is $\\boxed{92}$.",
+        "answer": "92"
+    },
+    {
+        "problem": "The perimeter of a rectangle is 56 meters. The ratio of its length to its width is 4:3. What is the length in meters of a diagonal of the rectangle?",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "Suppose that the rectangle's length is $4l$, then it's width is $3l$.  Then its perimeter is $14l = 56$, meaning that $l = 4$.  Finally, the rectangle's diagonal is $\\sqrt{(4l)^2 + (3l)^2} = 5l = \\boxed{20}$.",
+        "answer": "20"
+    },
+    {
+        "problem": "The median of the set of numbers $\\{$12, 38, 45, $x$, 14$\\}$ is five less than the mean. If $x$ is a negative integer, what is the value of $x$?",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "Since $x$ is negative, the median of the set is 14.  Therefore, the mean of the set is $14+5=19$, and its sum is $19\\cdot 5=95$.  Since 12, 38, 45, and 14 sum to 109, the remaining integer $x$ must be $95-109=\\boxed{-14}$.",
+        "answer": "-14"
+    },
+    {
+        "problem": "Let $a=\\frac{3}{5}$ and let $b=\\frac{2}{3}$. Compute $a^{2}b^{-3}.$",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "Substituting the given values, we need to calculate, $\\left(\\frac{3}{5}\\right)^{2} \\left(\\frac{2}{3}\\right)^{-3}$. Because $n^{ab} = \\left(n^{a}\\right)^{b}$, this expression is equivalent to $$\\left(\\frac{3}{5}\\right)^{2} \\left(\\left(\\frac{2}{3}\\right)^{-1}\\right)^{3} = \\left(\\frac{3}{5}\\right)^{2} \\left(\\frac{3}{2}\\right)^{3}.$$Because $\\left(\\frac{a}{b}\\right)^{n} = \\frac{a^{n}}{b^{n}}$, we can rewrite this as $$\\frac{3^{2}}{5^{2}} \\cdot \\frac{3^{3}}{2^{3}} = \\frac{3^{2} \\cdot 3^{3}}{5^{2} \\cdot 2^{3}}.$$We then have \\[\\frac{3^{2} \\cdot 3^{3}}{5^{2} \\cdot 2^{3}} = \\frac{9\\cdot 27}{25\\cdot 8} = \\boxed{\\frac{243}{200}}.\\]",
+        "answer": "\\frac{243}{200}"
+    },
+    {
+        "problem": "In the diagram, $PQR$ is a straight line.  What is the value of $x$?\n\n[asy]\ndraw((-2,0)--(8,0),linewidth(0.7)); draw((8,0)--(5,-5.5)--(0,0),linewidth(0.7));\nlabel(\"$P$\",(-2,0),W); label(\"$Q$\",(0,0),N); label(\"$R$\",(8,0),E); label(\"$S$\",(5,-5.5),S);\n\nlabel(\"$136^\\circ$\",(0,0),SW); label(\"$64^\\circ$\",(7,0),S);\n\nlabel(\"$x^\\circ$\",(5,-4.5));\n\n[/asy]",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Since $\\angle PQS$ is an exterior angle of $\\triangle QRS$, then $\\angle PQS=\\angle QRS+\\angle QSR$, so $136^\\circ = x^\\circ + 64^\\circ$ or $x = 136-64=\\boxed{72}$.",
+        "answer": "72"
+    },
+    {
+        "problem": "Find the sum of the first seven prime numbers that have a units digit of 7.",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "We write out the first few numbers with a units digit of 7: \\[7, 17, 27, 37, 47, 57, 67, 77, 87, 97, 107, 117\\] Note how 7 and 17 are prime, but 27 (9 times 3) is not.  37 and 47 are prime, but 57 (3 times 19) is not.  67 is prime, but 77 (7 times 11) is not.  87 has a units sum of 15 which is divisible by 3, so 87 itself is divisible by 3 and thus is not prime.  97 and 107 are prime.  By now, we have found our desired first seven prime numbers.  Their sum is  \\begin{align*}\n7 &+ 17 + 37 + 47 + 67 + 97 + 107 \\\\\n&= 7+7+7+7+7+7+7 + 10 + 30 + 40 + 60 + 90 + 100 \\\\\n&= 7(7) + 10(1+3+4+6+9+10) \\\\\n&= 49 + 10(33)=\\boxed{379}.\n\\end{align*}",
+        "answer": "379"
+    },
+    {
+        "problem": "Six positive integers from a list of nine positive integers are $6, 7, 2, 4, 8, 5$. What is the largest possible value of the median of this list of nine positive integers?",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "If we sort the numbers, we get $2,4,5,6,7,8$. If we want to maximize the median, we should add three numbers larger than 8. This makes the median $\\boxed{7}$.",
+        "answer": "7"
+    },
+    {
+        "problem": "Suppose that $a$ is a multiple of 4 and $b$ is a multiple of 8. Which of the following statements are true?\n\nA. $a+b$ must be even.\nB. $a+b$ must be a multiple of 4.\nC. $a+b$ must be a multiple of 8.\nD. $a+b$ cannot be a multiple of 8.\n\nAnswer by listing your choices in alphabetical order, separated by commas.  For example, if you think all four are true, then answer $\\text{A,B,C,D}$",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "We assess the statements one at a time.\n\nA. If $a$ is a multiple of 4, then $a=4m$ for some integer $m$. In particular, $a$ can be written as $2\\cdot(2m)$ and therefore is even (recall that being a multiple of 2 is the same as being even). Similarly, $b$ is eight times $n$ for some integer $n$, which means that $b=2\\cdot(4n)$ is also even. Finally, the sum of two even numbers is even. So statement A is true.\n\nB. We are told that $a$ is a multiple of 4. Also, $b$ is eight times $n$ for some integer $n$, which means that $b=4\\cdot(2n)$ is also a multiple of 4. Since the sum of two multiples of 4 is again a multiple of 4, we see that $a+b$ is a multiple of 4. So statement B is true.\n\nC. If we take $a=12$ and $b=8$, we see that $a+b=20$ is not a multiple of 8. Thus statement C is false.\n\nD. If we take $a=16$ and $b=16$, then $a+b=32$ is a multiple of 8. So statement D is false.\n\nSo, the true statements are $\\boxed{\\text{A,B}}$.",
+        "answer": "A,B"
+    },
+    {
+        "problem": "The number of white balls and red balls in a jar is in the ratio of $3:2$. If there are 9 white balls, how many red balls are there?",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "For every 3 white balls in the jar, there are 2 red balls in the jar. Since there are 9 white balls in the jar, which is 3 groups of 3 white balls, there must be 3 groups of 2 red balls in the jar. Thus, there are $3\\times2 =\\boxed{6}$ red balls in the jar.",
+        "answer": "6"
+    },
+    {
+        "problem": "Compute: $9 \\cdot \\frac{1}{13} \\cdot 26.$",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "We have  \\[9\\cdot \\frac{1}{13}\\cdot 26 = 9\\cdot \\frac{26}{13} = 9\\cdot (26\\div 13) = 9\\cdot 2 = \\boxed{18}.\\]",
+        "answer": "18"
+    },
+    {
+        "problem": "What is $\\left(\\frac{7}{8}\\right)^3 \\cdot \\left(\\frac{7}{8}\\right)^{-3}$?",
+        "level": "Level 3",
+        "type": "Prealgebra",
+        "solution": "By definition, if $a$ is nonzero, then $a^{-3}$ is the reciprocal of $a^3$.  So, $\\left(\\frac78\\right)^3$ and $\\left(\\frac78\\right)^{-3}$ are reciprocals.  Therefore, their product is $\\boxed{1}$.",
+        "answer": "1"
+    },
+    {
+        "problem": "How many two-digit numbers have digits whose sum is a perfect square?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "The sum of the digits of a two-digit number is at most $9+9=18.$ This means the only possible perfect square sums are $1,$ $4,$ $9,$ and $16.$ Each square has the following two-digit possibilities:\n\n$\\bullet$ $1:$ $10$\n\n$\\bullet$ $4:$ $40,$ $31,$ $22,$ $13$\n\n$\\bullet$ $9:$ $90,$ $81,$ $72,$ $63,$ $54,$ $45,$ $36,$ $27,$ $18$\n\n$\\bullet$ $16:$ $97,$ $88,$ $79$\n\nThere are $\\boxed{17}$ two-digit numbers in all.",
+        "answer": "17"
+    },
+    {
+        "problem": "Find the greatest common divisor of 91 and 72.",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "$91 = 7^1 \\cdot 13^1$ and $72 = 2^3 \\cdot 3^2$, so gcd(91, 72) = $\\boxed{1}$.",
+        "answer": "1"
+    },
+    {
+        "problem": "Let   $$x = 64 + 96 + 128 + 160 + 288 + 352 + 3232.$$ Which of the following statements are true?\n\nA. $x$ is a multiple of $4$.\nB. $x$ is a multiple of $8$.\nC. $x$ is a multiple of $16$.\nD. $x$ is a multiple of $32$.\n\nAnswer as a list of letters in alphabetical order, separated by commas.  For example, if you think A and C are the true statements, then answer ``A,C\" (without the quote marks).",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "We divide each number in the sum by $32$ to get the following equalities:   \\begin{align*}\n64 &= 32 \\cdot 2\\\\\n96 &= 32 \\cdot 3\\\\\n128 &= 32 \\cdot 4\\\\\n160 &= 32 \\cdot 5\\\\\n288 &= 32 \\cdot 9\\\\\n352 &= 32 \\cdot 11\\\\\n3232 &= 32 \\cdot 101.\n\\end{align*} These equations tell us that each of the numbers in the sum is a multiple of $32$. A sum of multiples of $32$ is a multiple of $32$, so $x$ is a multiple of $32$. It follows that D is true.\n\nRecall that, for integers $x$, $y$, and $z$, if $x$ is a factor of $y$ and $y$ is a factor of $z$, then $x$ is a factor of $z$. Note that      $$32 = 4 \\cdot 8 = 16 \\cdot 2,$$ so $4$, $8$, and $16$ are factors of $32$. We already showed $32$ is a factor of $x$, so $4$, $8$, and $16$ must also be factors of $x$. It follows that statements A, B, and C are also true.\n\nWe have shown that all the statements are true, so our final answer is $\\boxed{\\text{A,B,C,D}}$.",
+        "answer": "A,B,C,D"
+    },
+    {
+        "problem": "The degree measure of the sum of the interior angles of a convex polygon with $n$ sides is 1800. What is the degree measure of the sum of the interior angles of a convex polygon with $n + 2$ sides?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "The sum of the measures of the interior angles of an $n$-gon is $180^\\circ(n-2)$.  Therefore,  \\[\n180(n-2)=1800 \\implies n=12.\n\\] So $n+2=14$, and the sum of the measures of the interior angles of a 14-gon is $180^\\circ(14-2)=\\boxed{2160}$ degrees.",
+        "answer": "2160"
+    },
+    {
+        "problem": "How many of the numbers from the set $\\{1,\\ 2,\\ 3,\\ldots,\\ 50\\}$ have a perfect square factor other than one?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "The potential square factors are $4$, $9$, $16$, $25$, $36$, and $49$. $4$ divides $12$ of the numbers. $9$ divides $5$ of the numbers, but we've counted $4 \\cdot 9 = 36$ twice, so we subtract $1$. $16$ divides $3$ of the numbers, but each of those is also divisible by $4$, so we don't count them. $25$ divides $2$. $36$ divides $1$, itself, but it's already been counted. Finally, $49$ divides $1$. Thus, our final answer is $12 + (5-1) + 2 + 1 = \\boxed{19}$.",
+        "answer": "19"
+    },
+    {
+        "problem": "The noon temperatures for seven consecutive days were $80^{\\circ}$, $79^{\\circ}$, $81^{\\circ}$, $85^{\\circ}$, $87^{\\circ}$, $89^{\\circ}$, and $87^{\\circ}$ Fahrenheit. What is the mean noon temperature, in degrees Fahrenheit, for the week?",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Writing each temperature as 80 degrees plus or minus some number of degrees, the sum of the temperatures is  \\begin{align*}\n80+79&+81+85+87+89+87 \\\\&= 80 +(80-1) + (80+1) + (80+5) \\\\\n&\\qquad+ (80+7)+(80+9)+(80+7)\\\\\n&=7\\cdot 80 + (-1+1+5+7+9+7)\\\\\n&=7\\cdot 80 + 28.\n\\end{align*} So, the mean of the 7 temperatures is  \\[\\frac{7\\cdot 80 + 28}{7} = \\frac{7\\cdot 80}{7} + \\frac{28}{7} = \\boxed{84}.\\]",
+        "answer": "84"
+    },
+    {
+        "problem": "Square A has a perimeter of $24$ cm.  Square B has an area equal to one-fourth the area of square A.  What is the perimeter of square B?\n\n[asy]\ndraw((0,0)--(7,0));\ndraw((7,0)--(7,7));\ndraw((7,7)--(0,7));\ndraw((0,7)--(0,0));\ndraw((11,2)--(11,5));\ndraw((11,5)--(14,5));\ndraw((14,5)--(14,2));\ndraw((14,2)--(11,2));\nlabel(\"A\",(3.5,3.5));\nlabel(\"B\",(12.5,3.5));\n[/asy]",
+        "level": "Level 3",
+        "type": "Prealgebra",
+        "solution": "Since square $A$ has a perimeter of 24 cm and all its sides are equal in length, each side measures $24/4=6$ cm. The area of square $A$ is thus $6\\cdot6=36$ square cm. Thus, the area of square $B$ is $36/4=9$ square cm. So each side of square $B$ measures $\\sqrt{9}=3$ cm. Finally, the perimeter of square $B$ is $4\\cdot3=\\boxed{12}$ cm.",
+        "answer": "12"
+    },
+    {
+        "problem": "Two circles have the same center $C.$ (Circles which have the same center are called concentric.) The larger circle has radius $10$ and the smaller circle has radius $6.$ Determine the area of the ring between these two circles. [asy]\nimport graph;\nfilldraw(circle((0,0),10), lightgray, black+linewidth(1));\nfilldraw(circle((0,0),6), white, black+linewidth(1));\ndot((0,0));\nlabel(\"$C$\",(0,0),NE);\n[/asy]",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "The area of a circle with radius $r$ is $\\pi r^2.$\n\nSo the area of the larger circle is $\\pi(10^2)=100\\pi$ and the area of the smaller circle is $\\pi(6^2)=36\\pi.$\n\nThe area of the ring between the two circles is the difference of these two areas.\n\nTherefore, the area of the ring is $100\\pi - 36\\pi = \\boxed{64\\pi}.$",
+        "answer": "64\\pi"
+    },
+    {
+        "problem": "The table shown is partially filled in with the results of a survey done by the radio station KMAT. How many of the females surveyed listen to this station?\n\n\\begin{tabular}{| l | c | r |}\n\\hline\n& listen & don't listen \\\\\n\\hline\nmales & 62 & \\\\ \\hline\nfemales & & 102 \\\\ \\hline\ntotal & 130 & 150 \\\\\n\\hline\n\\end{tabular}",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "Since there were a total of $130$ people surveyed who listen to this station and we know that $62$ of them are male, $130-62=\\boxed{68}$ of the females surveyed said that they listen to this station.",
+        "answer": "68"
+    },
+    {
+        "problem": "If three standard, six-faced dice are rolled, what is the probability that the sum of the three numbers rolled is 9? Express your answer as a common fraction.",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "There are $6^3=216$ equally likely possibilities for the result of a roll of three dice.  We count the number of results which give a sum of 9.  If the three rolls are all the same, then (3,3,3) is the only possibility.  If two of the three rolls are the same, then (2,2,5) and (4,4,1) along with their permutations (2,5,2), (5,2,2), (4,1,4), and (1,4,4) are the only possibilities.  If the three rolls are distinct, then (1,2,6), (1,3,5), and (2,3,4) along with their permutations are the only possibilities.  Since there are $3!=6$ ways to arrange three distinct numbers, each of the rolls (1,2,6), (1,3,5), and (2,3,4) has 6 permutations.  Altogether, there are $1+6+3\\cdot 6=25$ rolls which have a sum of 9.  Therefore, the probability of obtaining a sum of 9 is $\\boxed{\\frac{25}{216}}$.",
+        "answer": "\\frac{25}{216}"
+    },
+    {
+        "problem": "The product of two positive integers is 18. The positive difference of these two integers is 3. What is the sum of the two integers?",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "18 has 3 possible factorizations into pairs: $(1,18)$, $(2,9)$, and $(3,6)$. Only one of these, $(3,6)$, has difference 3, and it has sum $3+6=\\boxed{9}$.",
+        "answer": "9"
+    },
+    {
+        "problem": "Grandma gave Bryce and Carter some raisins. Bryce received 6 more raisins than Carter, and Carter received half the number of raisins Bryce received. How many raisins did Bryce receive?",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Let the number of raisins Bryce received be $x$. Since Bryce received 6 more raisins than Carter, Carter received $x-6$ raisins. Since Carter received half the number of raisins Bryce did, Carter also received $x/2$ raisins. We have two ways of expressing the number of raisins Carter received, so we have the equation $x-6=x/2$, or $x=12$. Thus, Bryce received $\\boxed{12}$ raisins.",
+        "answer": "12"
+    },
+    {
+        "problem": "Given the three digits 2, 4 and 7, how many different positive two-digit integers can be formed using these digits if a digit may not be repeated in an integer?",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "There are 3 choices for the first digit and 2 for the second, for a total of $3\\cdot2=\\boxed{6}$ integers possible.",
+        "answer": "6"
+    },
+    {
+        "problem": "In the diagram below, lines $k$ and $\\ell$ are parallel.  Find the measure of angle $x$ in degrees. [asy]\nsize(200);\nimport markers;\npair A = dir(-22)*(0,0);\npair B = dir(-22)*(4,0);\npair C = dir(-22)*(4,2);\npair D = dir(-22)*(0,2);\npair F = dir(-22)*(0,1.3);\npair G = dir(-22)*(4,1.3);\npair H = dir(-22)*(2,1);\npair I = dir(-22)*(1.35,1.3);\n\nmarkangle(Label(\"$x$\",Relative(0.5)),n=1,radius=11,I+B,I,(2*I-B));\n\npair X,Y;\n\nX=A;\nY=B;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nX=A;\nY=C;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nX=C;\nY=B;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nX=B;\nY=D;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nX=G;\nY=F;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nlabel(\"$\\ell$\",1.4*A-.4*B);\nlabel(\"$k$\",1.4*F-.4*G);\n\n//label(\"$x$\",H+(.4,-.15));\nlabel(\"$30^\\circ$\",A+(1,-.1));\nlabel(\"$90^\\circ$\",B+(.4,.1));\nlabel(\"$30^\\circ$\",B+(-1,.7));\n[/asy]",
+        "level": "Level 3",
+        "type": "Prealgebra",
+        "solution": "[asy]\nsize(200);\nimport markers;\npair A = dir(-22)*(0,0);\npair B = dir(-22)*(4,0);\npair C = dir(-22)*(4,2);\npair D = dir(-22)*(0,2);\npair F = dir(-22)*(0,1.3);\npair G = dir(-22)*(4,1.3);\npair H = dir(-22)*(2,1);\npair I = dir(-22)*(1.35,1.3);\n\nmarkangle(Label(\"$x$\",Relative(0.5)),n=1,radius=11,I+B,I,(2*I-B));\n\npair X,Y;\n\nX=A;\nY=B;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X,red+1bp);\n\nX=A;\nY=C;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nX=C;\nY=B;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X);\n\nX=B;\nY=D;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X,red+1bp);\n\nX=G;\nY=F;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X,red+1bp);\n\nlabel(\"$\\ell$\",1.4*A-.4*B);\nlabel(\"$k$\",1.4*F-.4*G);\n\n//label(\"$x$\",H+(.4,-.15));\nlabel(\"$30^\\circ$\",A+(1,-.1));\nlabel(\"$90^\\circ$\",B+(.4,.1));\nlabel(\"$30^\\circ$\",B+(-1,.7));\n[/asy]\n\nIn order to find $x$, we consider the three red lines.  Since $k$ and $\\ell$ are parallel, we determine that we have the  pair of corresponding angles below:\n\n[asy]\nsize(200);\nimport markers;\npair A = dir(-22)*(0,0);\npair B = dir(-22)*(4,0);\npair C = dir(-22)*(4,2);\npair D = dir(-22)*(0,2);\npair F = dir(-22)*(0,1.3);\npair G = dir(-22)*(4,1.3);\npair H = dir(-22)*(2,1);\npair I = dir(-22)*(1.35,1.3);\n\nmarkangle(Label(\"$x$\",Relative(0.5)),n=1,radius=11,I+B,I,(2*I-B));\nmarkangle(Label(\"$30^\\circ$\",Relative(0.2)),n=1,radius=16,(2*I-B),I,I-B,red);\n\npair X,Y;\n\nX=A;\nY=B;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X,red+1bp);\n\nX=B;\nY=D;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X,red+1bp);\n\nX=G;\nY=F;\ndraw(1.3*X-.3*Y--1.3*Y-.3*X,red+1bp);\n\nlabel(\"$\\ell$\",1.4*A-.4*B);\nlabel(\"$k$\",1.4*F-.4*G);\n\nlabel(\"$30^\\circ$\",B+(-.9,.6),red);\n[/asy]\n\nThis angle is the supplement of $x$, so the measure of $x$ is  \\[180^\\circ-30^\\circ=\\boxed{150^\\circ}.\\]",
+        "answer": "150"
+    },
+    {
+        "problem": "Solve for $r$ in the equation $19-3=2+r$.",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "First we simplify the left side, which gives $16 = 2+r$.  Subtracting 2 from both sides gives us $r=\\boxed{14}$.",
+        "answer": "14"
+    },
+    {
+        "problem": "Find the product of the greatest common divisor and the least common multiple of $100$ and $120.$",
+        "level": "Level 3",
+        "type": "Prealgebra",
+        "solution": "First we find the prime factorization of each number: $$100=10\\times 10=(2\\times 5)\\times(2\\times 5)=2^2\\times 5^2$$ and $$120=10\\times 12=(2\\times 5)\\times(2\\times 6)=(2\\times 5)\\times(2\\times(2\\times 3))=2^3\\times 3\\times 5.$$ The common factors are $2^2$ and $5,$ so $\\gcd(100,120) = 2^2\\times 5=20.$\n\nThe least common multiple is formed by multiplying together the highest powers of all primes occurring in the factorization of either $100$ or $120:$ $$\\text{lcm}(100,120) = 2^3\\times 3\\times 5^2 = 8\\times 3\\times 25 = 24\\times 25 = 600.$$ Thus, the product of the $\\gcd$ and the $\\text{lcm}$ is $20\\times 600=\\boxed{12000}.$\n\n(Notice that this product is equal to the product of the original two numbers, $100$ and $120.$ Is that just a coincidence?)",
+        "answer": "12000"
+    },
+    {
+        "problem": "A square and a regular heptagon  are coplanar and share a common side $\\overline{AD}$, as shown. What is the degree measure of exterior angle $BAC$?  Express your answer as a common fraction.\n\n[asy]\nfor(int i=0; i <=7; ++i) {\ndraw(dir(360*i/7+90)--dir(360*(i+1)/7+90));\n}\npair A = dir(360*3/7+90);\npair F = dir(360*4/7+90);\npair C = A+dir(-90)*(F-A);\npair D = C+F-A;\npair B = dir(360*2/7+90);\n\ndraw(A--C--D--F);\n\nlabel(\"$A$\",A,NE);\nlabel(\"$B$\",B,W);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",F,NW);\n\n[/asy]",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "The measure of each interior angle in a regular $n$-gon is $180(n-2)/n$ degrees.  Therefore, the measure of angle $\\angle BAD$ is $180(7-2)/7=\\frac{900}7$ degrees and the measure of angle $CAD$ is 90 degrees.  The angle, $\\angle BAC$, therefore can be expressed as: \\[360^\\circ - \\frac{900}{7}^\\circ - 90^\\circ = 270^\\circ - \\frac{900}{7}^\\circ = \\frac{1890 - 900}{7}^\\circ = \\boxed{\\frac{990}{7}^\\circ}.\\]",
+        "answer": "\\frac{990}{7}"
+    },
+    {
+        "problem": "There is a committee composed of eight women and two men. When they meet, they sit in a row---the women in indistinguishable rocking chairs and the men on indistinguishable stools.  How many distinct ways are there for me to arrange the eight chairs and two stools for a meeting?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "Because the rocking chairs are indistinguishable from each other and the stools are indistinguishable from each other, we can think of first placing the two stools somewhere in the ten slots and then filling the rest with rocking chairs. The first stool has $10$ slots in which it can go, and the second has $9$. However, because they are indistinguishable from each other, we have overcounted the number of ways to place the stools by a factor of $2$, so we divide by $2$. Thus, there are $\\frac{10 \\cdot 9}{2} = \\boxed{45}$ distinct ways to arrange the ten chairs and stools for a meeting.",
+        "answer": "45"
+    },
+    {
+        "problem": "Compute $1+6\\cdot2-3+5\\cdot4\\div2$",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "When solving this problem, we must remember to apply the order of operations. First, we perform all cases of multiplication and division from left to right to obtain\n\n\\begin{align*}\n1+6\\cdot2-3+5\\cdot4\\div2&=1+12-3+5\\cdot4\\div2\\\\\n&=1+12-3+20\\div 2\\\\\n&=1+12-3+10.\n\\end{align*}Next, we perform all the required additions and subtractions from left to right. We get  \\begin{align*}\n1+12-3+10&=13-3+10\\\\\n&=10+10\\\\\n&=\\boxed{20}.\n\\end{align*}",
+        "answer": "20"
+    },
+    {
+        "problem": "In the diagram below, $BC$ is 8 cm.  In square centimeters, what is the area of triangle $ABC$?\n\n[asy]\ndefaultpen(linewidth(0.7));\ndraw((0,0)--(16,0)--(23,20)--cycle);\ndraw((16,0)--(23,0)--(23,20),dashed);\nlabel(\"8 cm\",(8,0),S);\nlabel(\"10 cm\",(23,10),E);\nlabel(\"$A$\",(23,20),N);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(16,0),SE);\n[/asy]",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "The area of a triangle is $\\frac{1}{2}(\\text{base})(\\text{height})$, so the area of triangle $ABC$ is $\\frac{1}{2}(8\\text{ cm})(\\text{10 cm})=\\boxed{40}$ square centimeters.",
+        "answer": "40"
+    },
+    {
+        "problem": "What is $3\\cdot 9+4\\cdot 10+11\\cdot 3+3\\cdot 8$?",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "The order of operations says that we must do the multiplication before we do the addition.  We get \\begin{align*}3\\cdot 9&=27,\\end{align*}\\begin{align*}4\\cdot 10&=40,\\end{align*}\\begin{align*}11\\cdot 3=33,\\end{align*}and \\begin{align*}3\\cdot 8&=24.\\end{align*}Now, substituting back into the original equation and using the properties of addition we get \\begin{align*}3\\cdot 9+4\\cdot 10+11\\cdot 3+3\\cdot 8&=27+40+33+24 \\\\ &=27+33+40+24 \\\\ &=60+40+24 \\\\ &=100+24 \\\\ &=\\boxed{124}.\\end{align*}",
+        "answer": "124"
+    },
+    {
+        "problem": "On this 5 by 5 grid of points, what fraction of the larger square's area is inside the shaded square? Express your answer as a common fraction.\n\n[asy]\nfill((2,2)--(3,3)--(2,4)--(1,3)--cycle,gray(0.7));\ndot((0,0));\ndot((0,1));\ndot((0,2));\ndot((0,3));\ndot((0,4));\ndot((1,0));\ndot((1,1));\ndot((1,2));\ndot((1,3));\ndot((1,4));\ndot((2,0));\ndot((2,1));\ndot((2,2));\ndot((2,3));\ndot((2,4));\ndot((3,0));\ndot((3,1));\ndot((3,2));\ndot((3,3));\ndot((3,4));\ndot((4,0));\ndot((4,1));\ndot((4,2));\ndot((4,3));\ndot((4,4));\ndraw((0,0)--(4,0)--(4,4)--(0,4)--cycle);\ndraw((2,2)--(3,3)--(2,4)--(1,3)--cycle);\n[/asy]",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "Since the side of the shaded square is a diagonal of the smaller squares, it has area $(\\sqrt{2})^2 = 2$ square units. The whole grid has area $4^2 = 16$ units, so the ratio of areas is $\\frac{2}{16} =\\boxed{\\frac 18}$.",
+        "answer": "\\frac{1}{8}"
+    },
+    {
+        "problem": "Express $0.\\overline{1}+0.\\overline{01}+0.\\overline{0001}$ as a common fraction.",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "We begin this problem by summing $0.\\overline{1}$, $0.\\overline{01}$, and $0.\\overline{0001}$ as decimals. We do this by realizing that $0.\\overline{1}$ can also be written as $0.\\overline{1111}$ and that $0.\\overline{01}$ can be written as $0.\\overline{0101}$. Thus, $0.\\overline{1}+0.\\overline{01}+0.\\overline{0001}=0.\\overline{1111}+0.\\overline{0101}+0.\\overline{0001}=0.\\overline{1213}$. (Since there is no carrying involved, we can add each decimal place with no problems.)\n\nTo express the number $0.\\overline{1213}$ as a fraction, we call it $x$ and subtract it from $10000x$: $$\\begin{array}{r r c r@{}l}\n&10000x &=& 1213&.12131213\\ldots \\\\\n- &x &=& 0&.12131213\\ldots \\\\\n\\hline\n&9999x &=& 1213 &\n\\end{array}$$ This shows that $0.\\overline{1213} = \\boxed{\\frac{1213}{9999}}$.\n\n(Note: We have to check that this answer is in lowest terms. The prime factorization of $9999$ is $3^2\\cdot 11\\cdot 101$, so we must check that $1213$ is not divisible by $3$, $11$, or $101$.\n\nSince $1+2+1+3=7$ is not a multiple of $3$, neither is $1213$. Also, $1213 = 11^2\\cdot 10 + 3 = 101\\cdot 12 + 1$, so $1213$ can't be a multiple of $11$ or $101$.)",
+        "answer": "\\frac{1213}{9999}"
+    },
+    {
+        "problem": "Round 3967149.1587234 to the nearest integer.",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Because 3967149.1587234 is between 3967149 and 3967150, rounding will give us either 3967149 or 3967150. Since 0.1587234 is less than 0.5, we get that 3967149.1587234 is closer to $\\boxed{3967149}$.",
+        "answer": "3967149"
+    },
+    {
+        "problem": "What is the sum of the largest and smallest prime factors of 990?",
+        "level": "Level 3",
+        "type": "Prealgebra",
+        "solution": "Taking the prime factorization of 990, we get $2\\cdot3^2\\cdot5\\cdot11$. So, our answer is $11+2=\\boxed{13}$.",
+        "answer": "13"
+    },
+    {
+        "problem": "The ratio of butter:flour:sugar in a recipe is 1:6:4. When using 8 cups of sugar in this recipe, how many total cups of these three ingredients will be used?",
+        "level": "Level 3",
+        "type": "Prealgebra",
+        "solution": "We have that in every recipe, there is 1 part butter to 6 parts flour to 4 parts sugar. That is identical to saying that there are $2 \\cdot 1 = 2$ parts butter to $2 \\cdot 6 = 12$ parts flour to $2 \\cdot 4 = 8$ parts sugar. If each part is a cup, then there must be 12 cups flour and 2 cups butter used. In total, there are $12+2+8=\\boxed{22}$ total cups of ingredients used.",
+        "answer": "22"
+    },
+    {
+        "problem": "Calculate $(-1)^{47} + 2^{(3^3+4^2-6^2)}$.",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Recall that $(-a)^n=-a^n$ when $n$ is odd. Because 47 is odd, $(-1)^{47}=-1^{47}=-1$. Evaluating the remaining exponents, we get \\begin{align*}\n(-1)^{47} + 2^{(3^3+4^2-6^2)}&= -1 + 2^{(3^3+4^2-6^2)} \\\\\n&=-1 + 2^{(27+16-36)} \\\\\n&=-1 + 2^{(43-36)} \\\\\n&=-1 + 2^{7} \\\\\n&=-1+128 \\\\\n&=\\boxed{127}\n\\end{align*}",
+        "answer": "127"
+    },
+    {
+        "problem": "Dave's sister baked $3$ dozen pies of which half contained chocolate, two thirds contained marshmallows, three-fourths contained cayenne, and one-sixths contained salted soy nuts.  What is the largest possible number of pies that had none of these ingredients?",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "She baked 36 pies.  Of these\n\n1. $\\frac12\\cdot36=18$ contained chocolate\n\n2. $\\frac23\\cdot36=24$ contained marshmallows\n\n3. $\\frac34\\cdot36=27$ contained cayenne\n\n4. $\\frac16\\cdot36=6$  contained salted soy nuts.\n\n\n\nAt most 9 pies do not contain cayenne.  It is possible, however that all of the chocolate, marshmallow, and salted soy nut pies are among the other 27 pies, so there could be at most $\\boxed{9}$ pies without any of these ingredients.",
+        "answer": "9"
+    },
+    {
+        "problem": "Simplify $(x+15)+(100x+15)$.",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Combining the $x$ terms, we have $100x+x=100x+1x=101x$.  Combining the constant terms, we have $15+15=30$.  Thus our simplified expression is $\\boxed{101x+30}$.",
+        "answer": "101x+30"
+    },
+    {
+        "problem": "What is $\\left(\\frac{6}{7}\\right)^2 \\cdot \\left(\\frac{1}{2}\\right)^2$?",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Since $\\left(\\frac{a}{b}\\right)^j \\cdot \\left(\\frac{c}{d}\\right)^j = \\left(\\frac{a \\cdot c}{b \\cdot d}\\right)^{j}$, we know  $\\left(\\frac{6}{7}\\right)^2 \\cdot \\left(\\frac{1}{2}\\right)^2 = \\left(\\frac{6 \\cdot 1}{7 \\cdot 2}\\right)^2$.  Simplifying, we have $\\left(\\frac{3}{7}\\right)^2 = \\frac{3^2}{7^2}$, because $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$.  We know $3^2 = 9$ and $7^2 = 49$, so our answer is $\\boxed{\\frac{9}{49}}$.",
+        "answer": "\\frac{9}{49}"
+    },
+    {
+        "problem": "A 4-inch by 6-inch picture is enlarged for framing  by tripling its dimensions.  A 2-inch-wide border  is then placed around each side of the enlarged  picture, as shown.  Thin metal framing is sold only  in increments of one foot.  What is the minimum  number of linear feet of framing that must be  purchased to go around the perimeter of the border?\n\n[asy]\n\ndraw((0,0)--(14,0)--(14,20)--(0,20)--cycle,linewidth(2));\n\ndraw((4,4)--(10,4)--(10,16)--(4,16)--cycle);\n\nlabel(\"border\",(7,17),N);\n\nlabel(\"picture\",(7,8),N);\n\nlabel(\"frame\",(14,5),E);\n\ndraw((17.5,7.5)--(14.5,7.5),Arrow);\ndraw((10.5,7.5)--(13.5,7.5),Arrow);\n\n[/asy]",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "After the picture is enlarged by tripling its dimensions, the dimensions become $12\\times18$. After the border is added, the dimensions of the picture increase to $16\\times22$ (since each side has a 2-inch border). The perimeter is $16+16+22+22=76$ inches. Since $76/12=6\\frac{1}{3}$, we need $\\boxed{7}$ feet of framing to go around the entire picture.",
+        "answer": "7"
+    },
+    {
+        "problem": "A teacher asks her class what the value of $\\left(5^2-4^2\\right)^3$ is.  What is the value of the expression?",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "Calculating, $(5^2 - 4^2)^3 = (25-16)^3 = 9^3 = \\boxed{729}$.",
+        "answer": "729"
+    },
+    {
+        "problem": "My co-worker Larry only likes numbers that are divisible by 4, such as 20, or 4,004.  How many different ones digits are possible in numbers that Larry likes?",
+        "level": "Level 4",
+        "type": "Prealgebra",
+        "solution": "If a number is divisible by 4, then it is divisible by 2, which means that its last digit must be even.  The numbers 20, 12, 24, 16, and 28 show that any even digit is possible, so the number of possible last digits is $\\boxed{5}$.",
+        "answer": "5"
+    },
+    {
+        "problem": "I need to learn vocabulary words for my Spanish exam. There are 500 words and the exam grade is the percentage of these words that I recall correctly. Assuming I will recall correctly the words I learn and assuming my guesses will not yield any points, what is the least number of words I should learn to get at least $85\\%$ on the exam?",
+        "level": "Level 2",
+        "type": "Prealgebra",
+        "solution": "Since the exam grade is the percentage of words I recall correctly, we can set up a proportion to find the minimum number of words I need to learn: \\begin{align*}\n\\frac{\\text{number of words I need to learn}}{\\text{total words}}&=\\frac{85\\%}{100\\%}\\\\\n\\frac{x}{500}&=\\frac{85}{100}\\\\\nx&=\\frac{85}{100}\\cdot 500\\\\\nx&=85\\cdot 5\\\\\nx&=\\boxed{425}.\n\\end{align*}Learning 425 words will lead to a score of exactly $85\\%$, so I do not need to learn any more words than 425.",
+        "answer": "425"
+    },
+    {
+        "problem": "Find $(21 \\div (6 + 1 - 4)) \\cdot 5.$",
+        "level": "Level 1",
+        "type": "Prealgebra",
+        "solution": "Recall that expressions within parentheses should be done first. In the inner set of parentheses, we have $6+1-4=3.$ So, the outer set of parentheses can be rewritten as $21\\div3=7.$ Finally, \\[(21 \\div (6 + 1 - 4)) \\cdot 5=7\\cdot5=\\boxed{35}.\\]",
+        "answer": "35"
+    },
+    {
+        "problem": "Billy Goats invested some money in stocks and bonds. The total amount he invested was $\\$165,\\!000$. If he invested 4.5 times as much in stocks as he did in bonds, what was his total investment in stocks?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "Let the amount of money Billy invested in bonds be $s.$ Then, the amount of money he invested in stocks is $4.5s.$ The total amount of money he invested is $s+4.5s=5.5s=165,\\!000.$ Thus, $s=\\frac{165,\\!000}{5.5}=30,\\!000.$ Finally, the amount invested in stocks is $4.5s=4.5\\cdot30,\\!000=\\boxed{135,\\!000}$ dollars.",
+        "answer": "135000"
+    },
+    {
+        "problem": "Bob is trying to decide between two cell phone plans. Plan A has no flat fee, but the user must pay $10$ cents per minute on the phone. Plan B requires a one-time fee of $\\$20$, but only requires a payment of $5$ cents per minute on the phone. What is the minimum whole number of minutes Bob has to use the phone for to make Plan B the cheaper plan?",
+        "level": "Level 5",
+        "type": "Prealgebra",
+        "solution": "Let $x$ be the number of minutes that Bob anticipates using. Plan A costs $10x$ cents, while Plan B costs $2000 + 5x$ cents. We therefore have the inequality \\begin{align*}\n2000+5x &< 10x \\\\\n\\Rightarrow\\qquad 2000 &< 5x \\\\\n\\Rightarrow\\qquad 400 &< x.\n\\end{align*} The smallest integer $x$ such that $400 < x$ is $401$. Therefore, Bob must use at least $\\boxed{401}$ minutes to make Plan B cheaper.",
+        "answer": "401"
+    }
+]

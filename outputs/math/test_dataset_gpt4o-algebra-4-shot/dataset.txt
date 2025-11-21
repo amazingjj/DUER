@@ -1,0 +1,4 @@
+A non-square rectangle has integer dimensions. The number  of square units in its area is numerically equal to the number of units in its perimeter. What is the number of units in the perimeter of this rectangle?
+What is the greatest integer $x$ such that $|6x^2-47x+15|$ is prime?
+Janice bought 30 items each priced at 30 cents, 2 dollars, or 3 dollars. If her total purchase price was $\\$$30.00, how many 30-cent items did she purchase?
+Find the greatest $a$ such that $\\frac{7\\sqrt{(2a)^2+(1)^2}-4a^2-1}{\\sqrt{1+4a^2}+3}=2$.

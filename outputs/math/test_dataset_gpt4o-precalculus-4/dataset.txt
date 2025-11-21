@@ -1,0 +1,28 @@
+Given that $\sum_{k=1}^{35}\sin 5k=\tan \frac mn,$ where angles are measured in degrees, and $m$ and $n$ are relatively prime positive integers that satisfy $\frac mn<90,$ find $m+n.$
+In triangle $ABC$, $AB = BC$, and $\overline{BD}$ is an altitude. Point $E$ is on the extension of $\overline{AC}$ such that $BE =
+10$.  The values of $\tan \angle CBE$, $\tan \angle DBE$, and $\tan \angle ABE$ form a geometric progression, and the values of $\cot \angle DBE$, $\cot \angle CBE$, $\cot \angle DBC$ form an arithmetic progression.  What is the area of triangle $ABC$?
+
+[asy]
+pair A,B,C,D,E;
+A=(0,0);
+B=(4,8);
+C=(8,0);
+E=(10,0);
+D=(4,0);
+draw(A--B--E--cycle,linewidth(0.7));
+draw(C--B--D,linewidth(0.7));
+label("$B$",B,N);
+label("$A$",A,S);
+label("$D$",D,S);
+label("$C$",C,S);
+label("$E$",E,S);
+[/asy]
+How many complex numbers $z$ such that $\left| z \right| < 30$ satisfy the equation
+\[
+  e^z = \frac{z - 1}{z + 1} \, ?
+\]
+Consider the line parameterized by
+\begin{align*} 
+x&= 4t + 2,\\ 
+y& = t+2.
+\end{align*}Find a vector $\begin{pmatrix}a \\ b \end{pmatrix}$ pointing from the origin to this line that is parallel to $\begin{pmatrix}2 \\1 \end{pmatrix}$.

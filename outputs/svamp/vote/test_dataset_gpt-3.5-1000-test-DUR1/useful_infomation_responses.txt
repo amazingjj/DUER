@@ -1,0 +1,5 @@
+'- Cost of each pack of DVDs: 76 dollars\n- Discount on each pack: 25 dollars'
+'- Dan had $4 at the start\n- Dan had $3 left after buying the candy bar'
+'- Paco had 26 salty cookies.\n- Paco ate 9 salty cookies.'
+'- Total number of children on the bus initially: 43\n- Number of children left on the bus after some got off: 21'
+'- 28 children were initially on the bus\n- 82 children got on the bus at the bus stop\n- Some children got off the bus\n- There were 30 children altogether on the bus after the bus stop'

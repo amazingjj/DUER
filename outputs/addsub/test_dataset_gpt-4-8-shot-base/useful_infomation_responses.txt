@@ -1,0 +1,8 @@
+'1. Trumpet cost: $149.16\n2. Music tool cost: $9.98\n3. Song book cost: $4.14'
+'1. Trisha walked 0.1111111111111111 mile from her hotel to a postcard shop.\n2. She walked another 0.1111111111111111 mile from the postcard shop to a T-shirt shop.\n3. She walked 0.6666666666666666 mile from the T-shirt shop back to the hotel.'
+'1. Nina first ran 0.08333333333333333 mile.\n2. Then, she ran another 0.08333333333333333 mile.\n3. Additionally, she ran 0.6666666666666666 mile.'
+'1. Heather walked 0.3333333333333333 mile from the car to the entrance.\n2. Heather walked 0.3333333333333333 mile from the entrance to the carnival rides.\n3. Heather walked 0.08333333333333333 mile from the carnival rides back to the car.'
+'1. First table: 0.25 bottle of mustard.\n2. Second table: 0.25 bottle of mustard.\n3. Third table: 0.375 bottle of mustard.'
+'1. 0.08333333333333333 tart filled with cherries.\n2. 0.75 tart filled with blueberries.\n3. 0.08333333333333333 tart filled with peaches.'
+'1. Brandy used 0.16666666666666666 pound of peanuts.\n2. Brandy used 0.16666666666666666 pound of chocolate chips.\n3. Brandy used 0.08333333333333333 pound of raisins.'
+'1. Allie had 0.3333333333333333 carton of rocky road ice cream.\n2. Allie had 0.3333333333333333 carton of cookie dough ice cream.\n3. Allie had 0.16666666666666666 carton of strawberry cheesecake ice cream.'

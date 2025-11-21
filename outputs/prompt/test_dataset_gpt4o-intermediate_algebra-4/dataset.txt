@@ -1,0 +1,12 @@
+Find the number of ordered quadruples $(a,b,c,d)$ of nonnegative real numbers such that
+\begin{align*}
+a^2 + b^2 + c^2 + d^2 &= 4, \\
+(a + b + c + d)(a^3 + b^3 + c^3 + d^3) &= 16.
+\end{align*}
+Find the greatest natural number $n$ such that $n\leq 2008$ and $(1^2+2^2+3^2+\cdots + n^2)\left[(n+1)^2+(n+2)^2+(n+3)^2+\cdots + (2n)^2\right]$ is a perfect square.
+Let
+$$p(x,y) = a_0 + a_1x + a_2y + a_3x^2 + a_4xy + a_5y^2 + a_6x^3 + a_7x^2y + a_8xy^2 + a_9y^3.$$Suppose that
+\begin{align*}
+p(0,0) &=p(1,0) = p( - 1,0) = p(0,1) = p(0, - 1)= p(1,1) = p(1, - 1) = p(2,2) = 0.
+\end{align*}There is a point $(r,s)$ for which $p(r,s) = 0$ for all such polynomials, where $r$ and $s$ are not integers.  Find the point $(r,s).$
+The function $f$ defined by $f(x)= \frac{ax+b}{cx+d}$, where $a$,$b$,$c$ and $d$ are nonzero real numbers, has the properties $f(19)=19$, $f(97)=97$ and $f(f(x))=x$ for all values except $\frac{-d}{c}$. Find the unique number that is not in the range of $f$.

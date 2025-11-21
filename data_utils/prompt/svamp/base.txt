@@ -1,0 +1,67 @@
+Q:After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet. How deep was the water?
+A：Let's think step by step
+1. Ron's height is 13 feet.
+2. Dean is 4 feet taller than Ron, so Dean's height is 13 + 4 = 17 feet.
+3. The depth of the water is 15 times Dean's height.
+4. Therefore, the depth of the water is 15 * 17 = 255 feet.
+The answer is 255
+
+Q:Tiffany was collecting cans for recycling. On monday she had 4 bags of cans. The next day she found some more bags worth of cans. If she had a total of 6 bags altogether. How many bags did she find on the next day?
+A：Let's think step by step
+1. Tiffany had 4 bags of cans on Monday.
+2. She found some more bags worth of cans the next day.
+3. She had a total of 6 bags altogether.
+4. Therefore, she found 6 - 4 = 2 bags on the next day.
+The answer is 2
+
+Q:The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus. How many buses are needed to take the trip?
+A：Let's think step by step
+1. There are 58 students in the school.
+2. Each school bus has 2 seats.
+3. Therefore, the number of buses needed is 58 / 2 = 29.
+The answer is 29
+
+Q:After eating a hearty meal they went to see the Buckingham palace. There were 71 paintings in the Buckingham palace. There, Rachel learned that 557 visitors came to the Buckingham palace that day. If there were 188 visitors the previous day. How many visited the Buckingham palace within 57 days?
+A：Let's think step by step
+1. There were 557 visitors that day.
+2. There were 188 visitors the previous day.
+3. Therefore, the number of more visitors that day than the previous day is 557 - 188 = 369.
+4. The number of visitors within 57 days is 369 * 57 = 21033.
+The answer is 21033
+
+Q:Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more pounds of strawberries. Marco's strawberries now weighed 36 pounds. How much did his dad's strawberries weigh now?
+Hint:1. Marco and his dad initially collected a total of 22 pounds of strawberries.\n2. Marco's dad found an additional 30 pounds of strawberries on the way back.\n3. Marco's total strawberries weighed 36 pounds after his dad found more strawberries.\n4. The total weight of strawberries after finding the additional 30 pounds is 22 pounds + 30 pounds = 52 pounds.\n5. Marco's dad's strawberries now weigh 52 pounds - 36 pounds = 16 pounds.
+A：Let's think step by step
+1. Together they collected 22 pounds of strawberries.
+2. Marco's strawberries now weigh 36 pounds.
+3. Therefore, Marco's dad's strawberries initially weighed 22 - 36 = -14 pounds.
+4. Marco's dad found 30 more pounds of strawberries.
+5. Therefore, Marco's dad's strawberries now weigh -14 + 30 = 16 pounds.
+The answer is 16
+
+Q:Frank was reading through his favorite book. The book had 41 chapters, each with the same number of pages. It has a total of 450 pages. It took Frank 30 days to finish the book. How many pages did he read per day?
+A：Let's think step by step
+1. The book has 450 pages.
+2. It took Frank 30 days to finish the book.
+3. Therefore, the number of pages he read per day is 450 / 30 = 15.
+The answer is 15
+
+Q:Mary is baking a cake. The recipe calls for 3 cups of sugar and 10 cups of flour. She already put in some cups of flour. If she still needs 5 more cups of flour than sugar. How many cups of flour did she put in?
+A：Let's think step by step
+1. The recipe calls for 10 cups of flour.
+2. Mary still needs 5 more cups of flour than sugar.
+3. The recipe calls for 3 cups of sugar.
+4. Therefore, Mary still needs 3 + 5 = 8 cups of flour.
+5. Therefore, she has already put in 10 - 8 = 2 cups of flour.
+The answer is 2
+
+Q:Robin has some packages of gum. There are 7 pieces in each package. Robin has 6 extra pieces of gum. In all the number of pieces of gums robin has is 41. How many packages does Robin have?
+A：Let's think step by step
+1. Robin has 41 pieces of gum in total.
+2. She has 6 extra pieces of gum.
+3. Therefore, the number of pieces of gum in packages is 41 - 6 = 35.
+4. Each package has 7 pieces of gum.
+5. Therefore, the number of packages Robin has is 35 / 7 = 5.
+The answer is 5
+
+Q:

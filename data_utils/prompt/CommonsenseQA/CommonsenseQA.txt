@@ -1,0 +1,35 @@
+(1)question:What do people use to absorb extra ink from a fountain pen? Answer Choices: (A) shirt pocket (B)calligrapher's hand (C) inkwell (D) desk drawer (E) blotter
+    Hint:Answer Choices: (A) shirt pocket (B)calligrapher's hand (C) inkwell (D) desk drawer (E) blotter
+    core_question:What do people use to absorb extra ink from a fountain pen?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the purpose of the item, which is to absorb ink. Next, evaluate each answer choice to see if it can absorb ink. (A) shirt pocket cannot absorb ink effectively. (B) calligrapher's hand is not used for absorbing ink. (C) inkwell is used to hold ink, not absorb it. (D) desk drawer is not used for absorbing ink. (E) blotter is specifically designed to absorb ink. Therefore, the answer is E.
+(2)question:What home entertainment equipment requires cable? Answer Choices: (A) radio shack (B) substation (C) television (D) cabinet
+    Hint:Answer Choices: (A) radio shack (B) substation (C) television (D) cabinet
+    core_question:What home entertainment equipment requires cable?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the requirement, which is the need for cable. Next, evaluate each answer choice to see if it requires cable. (A) radio shack is a store, not equipment. (B) substation is part of an electrical grid, not home entertainment equipment. (C) television requires cable for many services. (D) cabinet does not require cable. Therefore, the answer is C.
+(3)question:The fox walked from the city into the forest, what was it looking for? Answer Choices: (A) pretty flowers (B)hen house (C) natural habitat (D) storybook
+    Hint:Answer Choices: (A) pretty flowers (B)hen house (C) natural habitat (D) storybook
+    core_question:The fox walked from the city into the forest, what was it looking for?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the location the fox walked to, which is the forest. Next, evaluate each answer choice to see if it is something the fox would look for in the forest. (A) pretty flowers can be found in the forest, but it is not something a fox typically looks for. (B) hen house is not found in the forest. (C) natural habitat is where a fox lives, and it is found in the forest. (D) storybook is not found in the forest. Therefore, the answer is C.
+(4)question:Sammy wanted to go to where the people were. Where might he go? Answer Choices: (A) populated areas (B) race track (C) desert (D) apartment (E) roadblock
+    Hint:Answer Choices: (A) populated areas (B) race track (C) desert (D) apartment (E) roadblock
+    core_question:Sammy wanted to go to where the people were. Where might he go?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the requirement, which is a place with a lot of people. Next, evaluate each answer choice to see if it is a place with a lot of people. (A) populated areas have a lot of people. (B) race track can have a lot of people, but not always. (C) desert does not have a lot of people. (D) apartment can have people, but not necessarily a lot. (E) roadblock does not have a lot of people. Therefore, the answer is A.
+(5)question:Where do you put your grapes just before checking out? Answer Choices: (A) mouth (B) grocery cart (C)super market (D) fruit basket (E) fruit market
+    Hint:Answer Choices: (A) mouth (B) grocery cart (C)super market (D) fruit basket (E) fruit market
+    core_question:Where do you put your grapes just before checking out?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the action, which is checking out. Next, evaluate each answer choice to see if it is a place where grapes are placed before checking out. (A) mouth is not a place where grapes are placed before checking out. (B) grocery cart is where grocery items are placed before checking out. (C) super market is where you shop, not where you place items before checking out. (D) fruit basket is not typically used for holding items before checking out. (E) fruit market is where you buy fruits, not where you place items before checking out. Therefore, the answer is B.
+(6)question:Google Maps and other highway and street GPS services have replaced what? Answer Choices: (A) united states (B) mexico (C) countryside (D) atlas
+    Hint:Answer Choices: (A) united states (B) mexico (C) countryside (D) atlas
+    core_question:Google Maps and other highway and street GPS services have replaced what?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the function of Google Maps and GPS services, which is to give directions. Next, evaluate each answer choice to see if it is something that used to give directions. (A) united states is a country, not a tool for giving directions. (B) mexico is a country, not a tool for giving directions. (C) countryside is a type of area, not a tool for giving directions. (D) atlas is a book of maps used to give directions. Therefore, the answer is D.
+(7)question:Before getting a divorce, what did the wife feel who was doing all the work? Answer Choices: (A) harder (B) anguish (C) bitterness (D) tears (E) sadness
+    Hint:Answer Choices: (A) harder (B) anguish (C) bitterness (D) tears (E) sadness
+    core_question:Before getting a divorce, what did the wife feel who was doing all the work?
+    Please fully understand the Hint and question information and integrated comprehensively, and then give the answer carefully and give details!
+    response: Let's think step by step\nFirst, identify the situation, which is a wife doing all the work before getting a divorce. Next, evaluate each answer choice to see if it is a feeling associated with this situation. (A) harder is not a feeling. (B) anguish is a feeling, but not the closest to the situation. (C) bitterness is a feeling of resentment, which fits the situation. (D) tears is an expression of emotion, not a feeling. (E) sadness is a feeling, but not the closest to the situation. Therefore, the answer is C.

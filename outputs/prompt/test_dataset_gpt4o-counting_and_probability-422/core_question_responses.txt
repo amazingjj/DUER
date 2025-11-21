@@ -1,0 +1,4 @@
+'The core question is: What is the fewest number of toothpicks that could be removed from the figure so that no triangles remain?'
+'How many three-digit numbers are multiples of neither 5 nor 7?'
+'The core question is: What is the probability that the product of two different integers randomly chosen from the set {-5, -8, 7, 4, -2} is negative?'
+'How many dogs are in the Gooddog Obedience School given that 50 dogs can sit, 17 dogs can sit and stay, 29 dogs can stay, 12 dogs can stay and roll over, 34 dogs can roll over, 18 dogs can sit and roll over, 9 dogs can do all three tricks, and 9 dogs can do none?'

@@ -1,0 +1,25 @@
+The figure shows rectangle $ABCD$ with segment $PQ$ dividing the rectangle into two congruent squares. How many right triangles can be drawn using three of the points $\{A,P,B,C,Q,D\}$ as vertices? [asy]
+draw((0,0)--(8,0)--(8,4)--(0,4)--cycle);
+draw((4,0)--(4,4));
+label("D",(0,0),S);
+label("Q",(4,0),S);
+label("C",(8,0),S);
+label("B",(8,4),N);
+label("P",(4,4),N);
+label("A",(0,4),N);
+[/asy]
+How many of the numbers from the set $\{1,\ 2,\ 3,\ldots,\ 50\}$ have a perfect square factor other than one?
+Which of the following statements are true?
+
+A.  3 is a factor of 18.
+
+B.  17 is a divisor of 187 but not of 52.
+
+C.  24 is neither a divisor of 72 nor 67.
+
+D.  13 is a divisor of 26 but not of 52.
+
+E.  8 is a factor of 160.
+
+Write your answer with the letters in alphabetical order, separated by commas.  For example, if you think all five are true, you should type "A,B,C,D,E" (without the quotes).
+A book with 53 pages numbered 1 to 53 has its pages renumbered in reverse, from 53 to 1. For how many pages do the new page number and old page number share the same units digit?
